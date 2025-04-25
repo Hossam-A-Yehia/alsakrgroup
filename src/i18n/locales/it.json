@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Chi Siamo",
+    "services": "Servizi",
+    "products": "Prodotti",
+    "certifications": "Certificazioni",
+    "globalReach": "Presenza Globale",
+    "contact": "Contatti"
+  },
+  "hero": {
+    "title": "Frutta Fresca Consegna in Tutto il Mondo",
+    "subtitle": "Esportazione di frutta e verdura di alta qualità dall'Egitto dal 2002, con un impegno per la qualità e la sostenibilità.",
+    "connectButton": "Contattaci",
+    "learnButton": "Scopri di più"
+  },
+  "about": {
+    "title": "Chi Siamo",
+    "subtitle": "Esportazione di prodotti di alta qualità dal 2002",
+    "description1": "Dal 2002, Al Sakr Group è il principale esportatore di frutta e verdura fresca e di alta qualità dall'Egitto. La nostra passione per l'eccellenza ci spinge a consegnare i migliori prodotti ai mercati internazionali.",
+    "description2": "Promuoviamo la sostenibilità, l'innovazione e partnership solide, garantendo che ogni prodotto, dalla fattoria alla tavola, rispetti gli standard più elevati di qualità e freschezza.",
+    "features": {
+      "quality": "Garanzia di Qualità",
+      "delivery": "Consegna Puntuale",
+      "standards": "Standard Globali"
+    }
+  },
+  "services": {
+    "title": "I Nostri Servizi",
+    "subtitle": "Soluzioni complete per l'esportazione globale di prodotti",
+    "items": {
+      "sorting": {
+        "title": "Selezione e Imballaggio",
+        "description": "Selezione accurata e imballaggio ecologico per preservare la freschezza naturale dei nostri prodotti."
+      },
+      "cooling": {
+        "title": "Raffreddamento e Stoccaggio",
+        "description": "Tecnologie avanzate di raffreddamento per mantenere la qualità ottimale durante lo stoccaggio."
+      },
+      "logistics": {
+        "title": "Logistica Globale",
+        "description": "Consegna fluida per garantire che i tuoi prodotti arrivino freschi, ovunque nel mondo."
+      },
+      "farming": {
+        "title": "Agricoltura Sostenibile",
+        "description": "Pratiche agricole rispettose dell'ambiente garantendo al contempo la qualità."
+      },
+      "quality": {
+        "title": "Controllo Qualità",
+        "description": "Controlli rigorosi della qualità in ogni fase, dalla fattoria alla spedizione."
+      },
+      "market": {
+        "title": "Analisi di Mercato",
+        "description": "Esperti nelle tendenze del mercato globale e nelle preferenze dei consumatori."
+      }
+    }
+  },
+  "products": {
+    "title": "I Nostri Prodotti Premium",
+    "subtitle": "Esplora la nostra gamma di prodotti biologici, stagionali ed esotici provenienti da fattorie fidate",
+    "viewCatalog": "Vedi il Catalogo Completo",
+    "items": {
+      "tangerines": "Mandarini",
+      "strawberries": "Fragole",
+      "pomegranates": "Melograni",
+      "tomatoes": "Pomodori",
+      "grapes": "Uva",
+      "bellPeppers": "Peperoni",
+      "oranges": "Arance",
+      "greenBeans": "Fagiolini"
+    }
+  },
+  "certifications": {
+    "title": "Le Nostre Certificazioni",
+    "subtitle": "Il nostro impegno per la qualità è supportato da certificazioni internazionali",
+    "items": {
+      "iso": {
+        "title": "ISO 22000",
+        "description": "Garantire sistemi di gestione della sicurezza alimentare di alta qualità in tutte le nostre operazioni."
+      },
+      "haccp": {
+        "title": "HACCP",
+        "description": "Conformità agli standard di Analisi dei Pericoli e dei Punti Critici di Controllo per la sicurezza alimentare."
+      },
+      "globalGap": {
+        "title": "GLOBALG.A.P.",
+        "description": "Conformità alle buone pratiche agricole per un'agricoltura sostenibile."
+      },
+      "organic": {
+        "title": "Certificazione Biologica",
+        "description": "Conformità a standard rigorosi per la coltivazione di prodotti biologici."
+      }
+    }
+  },
+  "global": {
+    "title": "La Nostra Presenza Globale",
+    "subtitle": "Consegna di prodotti freschi a clienti in sei continenti",
+    "trusted": "Affidabile per i clienti in",
+    "countries": "Più di 30 paesi",
+    "across": "In tutto il mondo",
+    "regions": {
+      "europe": {
+        "name": "Europa",
+        "countries": "Spagna, Germania, Francia, Paesi Bassi, Italia, Regno Unito"
+      },
+      "middleEast": {
+        "name": "Medio Oriente",
+        "countries": "Emirati Arabi Uniti, Arabia Saudita, Qatar, Kuwait, Bahrein"
+      },
+      "asia": {
+        "name": "Asia",
+        "countries": "India, Cina, Singapore, Malesia, Giappone"
+      },
+      "africa": {
+        "name": "Africa",
+        "countries": "Marocco, Sudafrica, Kenya, Nigeria"
+      },
+      "northAmerica": {
+        "name": "Nord America",
+        "countries": "Stati Uniti, Canada"
+      },
+      "oceania": {
+        "name": "Oceania",
+        "countries": "Australia, Nuova Zelanda"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contattaci",
+    "subtitle": "Hai domande o sei interessato ai nostri prodotti? Non esitare a contattarci.",
+    "info": {
+      "title": "Informazioni di Contatto",
+      "email": "Email",
+      "phone": "Numero di telefono",
+      "address": "Indirizzo"
+    },
+    "businessHours": {
+      "title": "Orari di Apertura",
+      "mondayFriday": "Dal lunedì al venerdì: 9:00 - 17:00",
+      "saturday": "Sabato: 9:00 - 13:00",
+      "sunday": "Domenica: Chiuso"
+    },
+    "form": {
+      "title": "Invia un Messaggio",
+      "name": "Nome",
+      "email": "Email",
+      "message": "Messaggio",
+      "namePlaceholder": "Il tuo nome",
+      "emailPlaceholder": "La tua email",
+      "messagePlaceholder": "Scrivi il tuo messaggio qui...",
+      "send": "Invia il messaggio",
+      "sending": "Invio in corso...",
+      "successTitle": "Messaggio inviato con successo",
+      "successDescription": "Ti risponderemo al più presto.",
+      "errorTitle": "Errore nell'invio del messaggio",
+      "errorDescription": "Si è verificato un errore. Riprova più tardi."
+    }
+  },
+  "footer": {
+    "description": "Esportazione di frutta e verdura di alta qualità dall'Egitto dal 2002, con un impegno per la qualità e la sostenibilità.",
+    "contact": "Contatti",
+    "based": "Sede in Egitto, serviamo il mondo",
+    "explore": "Esplora",
+    "about": "Chi Siamo",
+    "services": "Servizi",
+    "products": "Prodotti",
+    "certifications": "Certificazioni",
+    "globalReach": "Presenza Globale",
+    "rights": "Tutti i diritti riservati."
+  }
+}

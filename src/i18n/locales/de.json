@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "products": "Produkte",
+    "certifications": "Zertifikate",
+    "globalReach": "Globale Reichweite",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Frische weltweit geliefert",
+    "subtitle": "Export von hochwertigen Früchten und Gemüse aus Ägypten seit 2002, mit einem Engagement für Qualität und Nachhaltigkeit.",
+    "connectButton": "Kontaktieren Sie uns",
+    "learnButton": "Mehr erfahren"
+  },
+  "about": {
+    "title": "Wer wir sind",
+    "subtitle": "Export von Premium-Qualitätsprodukten seit 2002",
+    "description1": "Seit 2002 ist Al Sakr Group Ägyptens führender Exporteur von frischen, hochwertigen Früchten und Gemüse. Unsere Leidenschaft für Exzellenz treibt uns dazu, die besten Produkte auf die internationalen Märkte zu bringen.",
+    "description2": "Wir setzen auf Nachhaltigkeit, Innovation und starke Partnerschaften, um sicherzustellen, dass jedes Produkt von der Farm bis zum Tisch die höchsten Standards in Qualität und Frische erfüllt.",
+    "features": {
+      "quality": "Qualitätsgarantie",
+      "delivery": "Pünktliche Lieferung",
+      "standards": "Globale Standards"
+    }
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Umfassende Lösungen für den globalen Export von Produkten",
+    "items": {
+      "sorting": {
+        "title": "Sortierung & Verpackung",
+        "description": "Präzise Sortierung und umweltfreundliche Verpackung zur Erhaltung der natürlichen Frische unserer Produkte."
+      },
+      "cooling": {
+        "title": "Kühlung & Lagerung",
+        "description": "Moderne Kühltechnologie zur Aufrechterhaltung der optimalen Qualität während der Lagerung."
+      },
+      "logistics": {
+        "title": "Globale Logistik",
+        "description": "Nahtlose Lieferung, um sicherzustellen, dass Ihre Produkte frisch überall auf der Welt ankommen."
+      },
+      "farming": {
+        "title": "Nachhaltige Landwirtschaft",
+        "description": "Umweltfreundliche Landwirtschaftspraktiken, die die Umwelt respektieren und gleichzeitig Qualität sicherstellen."
+      },
+      "quality": {
+        "title": "Qualitätskontrolle",
+        "description": "Strenge Qualitätsprüfungen in jeder Phase, von der Farm bis zum Versand."
+      },
+      "market": {
+        "title": "Marktanalyse",
+        "description": "Experteneinsichten in globale Markttrends und Verbraucherpräferenzen."
+      }
+    }
+  },
+  "products": {
+    "title": "Unsere Premium-Produkte",
+    "subtitle": "Entdecken Sie unser Sortiment an Bio-, saisonalen und exotischen Produkten, die von vertrauenswürdigen Bauernhöfen bezogen werden",
+    "viewCatalog": "Gesamtkatalog ansehen",
+    "items": {
+      "tangerines": "Mandarinen",
+      "strawberries": "Erdbeeren",
+      "pomegranates": "Granatäpfel",
+      "tomatoes": "Tomaten",
+      "grapes": "Trauben",
+      "bellPeppers": "Paprika",
+      "oranges": "Orangen",
+      "greenBeans": "Grüne Bohnen"
+    }
+  },
+  "certifications": {
+    "title": "Unsere Zertifikate",
+    "subtitle": "Unser Engagement für Qualität wird durch internationale Zertifikate untermauert",
+    "items": {
+      "iso": {
+        "title": "ISO 22000",
+        "description": "Gewährleistung erstklassiger Lebensmittelsicherheitsmanagementsysteme in unseren gesamten Betriebsabläufen."
+      },
+      "haccp": {
+        "title": "HACCP",
+        "description": "Einhaltung der Hazard Analysis Critical Control Point-Standards für Lebensmittelsicherheit."
+      },
+      "globalGap": {
+        "title": "GLOBALG.A.P.",
+        "description": "Befolgung guter landwirtschaftlicher Praktiken für nachhaltige Landwirtschaft."
+      },
+      "organic": {
+        "title": "Bio-Zertifizierung",
+        "description": "Erfüllung strenger Standards für den Anbau von Bio-Produkten."
+      }
+    }
+  },
+  "global": {
+    "title": "Unsere globale Präsenz",
+    "subtitle": "Lieferung frischer Produkte an Kunden auf sechs Kontinenten",
+    "trusted": "Vertrauen von Kunden in",
+    "countries": "Über 30 Länder",
+    "across": "Weltweit",
+    "regions": {
+      "europe": {
+        "name": "Europa",
+        "countries": "Spanien, Deutschland, Frankreich, Niederlande, Italien, Vereinigtes Königreich"
+      },
+      "middleEast": {
+        "name": "Naher Osten",
+        "countries": "VAE, Saudi-Arabien, Katar, Kuwait, Bahrain"
+      },
+      "asia": {
+        "name": "Asien",
+        "countries": "Indien, China, Singapur, Malaysia, Japan"
+      },
+      "africa": {
+        "name": "Afrika",
+        "countries": "Marokko, Südafrika, Kenia, Nigeria"
+      },
+      "northAmerica": {
+        "name": "Nordamerika",
+        "countries": "Vereinigte Staaten, Kanada"
+      },
+      "oceania": {
+        "name": "Ozeanien",
+        "countries": "Australien, Neuseeland"
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Haben Sie Fragen oder sind Sie an unseren Produkten interessiert? Kontaktieren Sie uns gerne.",
+    "info": {
+      "title": "Kontaktinformation",
+      "email": "E-Mail",
+      "phone": "Telefonnummer",
+      "address": "Adresse"
+    },
+    "businessHours": {
+      "title": "Öffnungszeiten",
+      "mondayFriday": "Montag bis Freitag: 9:00 - 17:00 Uhr",
+      "saturday": "Samstag: 9:00 - 13:00 Uhr",
+      "sunday": "Sonntag: Geschlossen"
+    },
+    "form": {
+      "title": "Nachricht senden",
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "namePlaceholder": "Ihr Name",
+      "emailPlaceholder": "Ihre E-Mail",
+      "messagePlaceholder": "Schreiben Sie hier Ihre Nachricht...",
+      "send": "Nachricht senden",
+      "sending": "Wird gesendet...",
+      "successTitle": "Nachricht erfolgreich gesendet",
+      "successDescription": "Wir werden Ihnen so schnell wie möglich antworten.",
+      "errorTitle": "Fehler beim Senden der Nachricht",
+      "errorDescription": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+    }
+  },
+  "footer": {
+    "description": "Export hochwertiger Früchte und Gemüse aus Ägypten seit 2002, mit einem Engagement für Qualität und Nachhaltigkeit.",
+    "contact": "Kontakt",
+    "based": "Mit Sitz in Ägypten, weltweit tätig",
+    "explore": "Entdecken",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "products": "Produkte",
+    "certifications": "Zertifikate",
+    "globalReach": "Globale Reichweite",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}

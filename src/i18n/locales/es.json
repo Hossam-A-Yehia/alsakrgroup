@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre nosotros",
+    "services": "Servicios",
+    "products": "Productos",
+    "certifications": "Certificaciones",
+    "globalReach": "Alcance global",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Frescura entregada a nivel mundial",
+    "subtitle": "Exportación de frutas y verduras de alta calidad desde Egipto desde 2002, con un compromiso con la calidad y la sostenibilidad.",
+    "connectButton": "Contáctanos",
+    "learnButton": "Aprender más"
+  },
+  "about": {
+    "title": "Quiénes somos",
+    "subtitle": "Exportación de productos de calidad premium desde 2002",
+    "description1": "Desde 2002, Al Sakr Group ha sido el principal exportador de frutas y verduras frescas y de alta calidad de Egipto. Nuestra pasión por la excelencia nos impulsa a llevar los mejores productos a los mercados internacionales.",
+    "description2": "Nos enfocamos en la sostenibilidad, la innovación y asociaciones sólidas para garantizar que cada producto, desde la granja hasta la mesa, cumpla con los más altos estándares de calidad y frescura.",
+    "features": {
+      "quality": "Garantía de calidad",
+      "delivery": "Entrega puntual",
+      "standards": "Normas globales"
+    }
+  },
+  "services": {
+    "title": "Nuestros servicios",
+    "subtitle": "Soluciones completas para la exportación global de productos",
+    "items": {
+      "sorting": {
+        "title": "Clasificación y embalaje",
+        "description": "Clasificación precisa y embalaje ecológico para preservar la frescura natural de nuestros productos."
+      },
+      "cooling": {
+        "title": "Refrigeración y almacenamiento",
+        "description": "Tecnología de refrigeración moderna para mantener la calidad óptima durante el almacenamiento."
+      },
+      "logistics": {
+        "title": "Logística global",
+        "description": "Entrega sin problemas para garantizar que sus productos lleguen frescos a cualquier parte del mundo."
+      },
+      "farming": {
+        "title": "Agricultura sostenible",
+        "description": "Prácticas agrícolas ecológicas que respetan el medio ambiente mientras aseguran calidad."
+      },
+      "quality": {
+        "title": "Control de calidad",
+        "description": "Pruebas de calidad rigurosas en cada etapa, desde la granja hasta el envío."
+      },
+      "market": {
+        "title": "Análisis de mercado",
+        "description": "Perspectivas de expertos sobre las tendencias del mercado global y las preferencias del consumidor."
+      }
+    }
+  },
+  "products": {
+    "title": "Nuestros productos premium",
+    "subtitle": "Descubre nuestra gama de productos orgánicos, de temporada y exóticos, provenientes de granjas de confianza",
+    "viewCatalog": "Ver catálogo completo",
+    "items": {
+      "tangerines": "Mandarinas",
+      "strawberries": "Fresas",
+      "pomegranates": "Granadas",
+      "tomatoes": "Tomates",
+      "grapes": "Uvas",
+      "bellPeppers": "Pimientos",
+      "oranges": "Naranjas",
+      "greenBeans": "Judías verdes"
+    }
+  },
+  "certifications": {
+    "title": "Nuestras certificaciones",
+    "subtitle": "Nuestro compromiso con la calidad está respaldado por certificaciones internacionales",
+    "items": {
+      "iso": {
+        "title": "ISO 22000",
+        "description": "Garantizando sistemas de gestión de seguridad alimentaria de primer nivel en todas nuestras operaciones."
+      },
+      "haccp": {
+        "title": "HACCP",
+        "description": "Cumplimiento con los estándares de Análisis de Peligros y Puntos Críticos de Control para la seguridad alimentaria."
+      },
+      "globalGap": {
+        "title": "GLOBALG.A.P.",
+        "description": "Cumplimiento de buenas prácticas agrícolas para una agricultura sostenible."
+      },
+      "organic": {
+        "title": "Certificación orgánica",
+        "description": "Cumplimiento de estrictos estándares para el cultivo de productos orgánicos."
+      }
+    }
+  },
+  "global": {
+    "title": "Nuestra presencia global",
+    "subtitle": "Entrega de productos frescos a clientes en seis continentes",
+    "trusted": "Confiado por clientes en",
+    "countries": "Más de 30 países",
+    "across": "A través del mundo",
+    "regions": {
+      "europe": {
+        "name": "Europa",
+        "countries": "España, Alemania, Francia, Países Bajos, Italia, Reino Unido"
+      },
+      "middleEast": {
+        "name": "Oriente Medio",
+        "countries": "Emiratos Árabes Unidos, Arabia Saudita, Catar, Kuwait, Bahréin"
+      },
+      "asia": {
+        "name": "Asia",
+        "countries": "India, China, Singapur, Malasia, Japón"
+      },
+      "africa": {
+        "name": "África",
+        "countries": "Marruecos, Sudáfrica, Kenia, Nigeria"
+      },
+      "northAmerica": {
+        "name": "América del Norte",
+        "countries": "Estados Unidos, Canadá"
+      },
+      "oceania": {
+        "name": "Oceanía",
+        "countries": "Australia, Nueva Zelanda"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "¿Tienes preguntas o estás interesado en nuestros productos? Contáctanos con gusto.",
+    "info": {
+      "title": "Información de contacto",
+      "email": "Correo electrónico",
+      "phone": "Número de teléfono",
+      "address": "Dirección"
+    },
+    "businessHours": {
+      "title": "Horario de atención",
+      "mondayFriday": "Lunes a Viernes: 9:00 - 17:00",
+      "saturday": "Sábado: 9:00 - 13:00",
+      "sunday": "Domingo: Cerrado"
+    },
+    "form": {
+      "title": "Enviar mensaje",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "namePlaceholder": "Tu nombre",
+      "emailPlaceholder": "Tu correo electrónico",
+      "messagePlaceholder": "Escribe tu mensaje aquí...",
+      "send": "Enviar mensaje",
+      "sending": "Enviando...",
+      "successTitle": "Mensaje enviado con éxito",
+      "successDescription": "Te responderemos lo antes posible.",
+      "errorTitle": "Error al enviar el mensaje",
+      "errorDescription": "Ha ocurrido un error. Intenta nuevamente más tarde."
+    }
+  },
+  "footer": {
+    "description": "Exportación de frutas y verduras de alta calidad desde Egipto desde 2002, con un compromiso con la calidad y la sostenibilidad.",
+    "contact": "Contacto",
+    "based": "Con sede en Egipto, con operaciones globales",
+    "explore": "Explorar",
+    "about": "Sobre nosotros",
+    "services": "Servicios",
+    "products": "Productos",
+    "certifications": "Certificaciones",
+    "globalReach": "Alcance global",
+    "rights": "Todos los derechos reservados."
+  }
+}

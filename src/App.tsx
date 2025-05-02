@@ -14,7 +14,6 @@ import { useTranslation } from 'react-i18next';
 
 function App() {
   useEffect(() => {
-    // Update the document title
     document.title = 'Al Sakr Group - Premium Produce Exporter';
   }, []);
 const {i18n}= useTranslation()

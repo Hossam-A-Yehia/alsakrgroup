@@ -9,16 +9,16 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Frais livré dans le monde entier",
-    "subtitle": "Exportation de fruits et légumes de qualité supérieure depuis l'Égypte depuis 2002, avec un engagement envers la qualité et la durabilité.",
-    "connectButton": "Contactez-nous",
+    "title": "Fraîcheur livrée à l'échelle mondiale",
+    "subtitle": "Exportation de fruits et légumes de première qualité depuis l'Égypte depuis 2002, avec un engagement envers la qualité et la durabilité.",
+    "connectButton": "Connectez-vous avec nous",
     "learnButton": "En savoir plus"
   },
   "about": {
-    "title": "Qui nous sommes",
+    "title": "Qui sommes-nous",
     "subtitle": "Exportation de produits de qualité supérieure depuis 2002",
-    "description1": "Depuis 2002, Al Sakr Group est le principal exportateur de fruits et légumes frais et de haute qualité d'Égypte. Notre passion pour l'excellence nous pousse à livrer les meilleurs produits aux marchés internationaux.",
-    "description2": "Nous privilégions la durabilité, l'innovation et des partenariats solides, garantissant que chaque produit, de la ferme à la table, respecte les normes les plus élevées en matière de qualité et de fraîcheur.",
+    "description1": "Depuis 2002, le groupe Al Sakr est le premier exportateur égyptien de fruits et légumes frais de haute qualité. Notre passion pour l'excellence nous pousse à livrer les meilleurs produits sur les marchés internationaux.",
+    "description2": "Nous privilégions la durabilité, l'innovation et des partenariats solides, garantissant que chaque produit, de la ferme à la table, répond aux normes les plus élevées de qualité et de fraîcheur.",
     "features": {
       "quality": "Garantie de qualité",
       "delivery": "Livraison ponctuelle",
@@ -34,8 +34,8 @@
         "description": "Tri précis et emballage écologique pour préserver la fraîcheur naturelle de nos produits."
       },
       "cooling": {
-        "title": "Refroidissement et stockage",
-        "description": "Technologie avancée de refroidissement pour maintenir la qualité optimale lors du stockage."
+        "title": "Réfrigération et stockage",
+        "description": "Technologie de réfrigération avancée pour maintenir une qualité optimale pendant le stockage."
       },
       "logistics": {
         "title": "Logistique mondiale",
@@ -43,31 +43,133 @@
       },
       "farming": {
         "title": "Agriculture durable",
-        "description": "Pratiques agricoles respectueuses de l'environnement tout en garantissant la qualité."
+        "description": "Pratiques agricoles respectueuses de l'environnement garantissant la qualité."
       },
       "quality": {
-        "title": "Contrôle de qualité",
-        "description": "Contrôles rigoureux de la qualité à chaque étape, de la ferme à l'expédition."
+        "title": "Contrôle qualité",
+        "description": "Contrôles qualité rigoureux à chaque étape, de la ferme à l'expédition."
       },
       "market": {
-        "title": "Analyse du marché",
+        "title": "Analyse de marché",
         "description": "Expertise sur les tendances du marché mondial et les préférences des consommateurs."
       }
     }
   },
   "products": {
     "title": "Nos produits premium",
-    "subtitle": "Découvrez notre gamme de produits bio, saisonniers et exotiques, provenant de fermes de confiance",
+    "subtitle": "Découvrez notre gamme de produits biologiques, saisonniers et exotiques, sourcés auprès de fermes de confiance",
     "viewCatalog": "Voir le catalogue complet",
+    "showLess": "Voir moins",
+    "season": "Saison",
+    "packing": "Emballage",
+    "tabs": {
+      "frozen": "Produits surgelés",
+      "dry": "Produits secs et en poudre",
+      "fresh": "Produits frais"
+    },
     "items": {
+      "mix_berries": "Mélange de baies",
+      "green_grapes": "Raisins verts",
+      "red_grapes": "Raisins rouges",
+      "black_grapes": "Raisins noirs",
+      "molokhia": "Molokhia",
+      "muskmelon": "Melon cantaloup",
+      "dragon_fruit": "Fruit du dragon",
+      "yellow_dates": "Dattes jaunes",
+      "pineapple": "Ananas",
       "tangerines": "Mandarines",
-      "strawberries": "Fraises",
+      "strawberry": "Fraises",
       "pomegranates": "Grenades",
       "tomatoes": "Tomates",
       "grapes": "Raisins",
-      "bellPeppers": "Poivrons",
-      "oranges": "Oranges",
-      "greenBeans": "Haricots verts"
+      "bell_peppers": "Poivrons",
+      "orange": "Oranges",
+      "green_beans": "Haricots verts",
+      "mango": "Mangue",
+      "mandarin": "Mandarine",
+      "grapefruit": "Pamplemousse",
+      "fig": "Figue",
+      "peach": "Pêche",
+      "guava": "Goyave",
+      "rockmelon": "Melon rock",
+      "bananas": "Bananes",
+      "watermelon": "Pastèque",
+      "plum": "Prune",
+      "apricot": "Abricot",
+      "kiwi": "Kiwi",
+      "persimmon": "Kaki",
+      "pear": "Poire",
+      "custard_apple": "Chérimole",
+      "avocado": "Avocat",
+      "pumpkin": "Citrouille",
+      "red_dates": "Dattes rouges",
+      "yellow_dates_barhi": "Dattes jaunes (Barhi)",
+      "dates_majdul": "Dattes (Majdul)",
+      "dates_sugary": "Dattes (Sugary)",
+      "green_peas": "Petits pois verts",
+      "cabbage_white_and_red": "Chou (blanc et rouge)",
+      "iceberg_lettuce_green_cos_chinese_lettuce": "Laitue iceberg/Laitue romaine/Laitue chinoise",
+      "capsicum_green_red_yellow": "Poivrons (vert, rouge, jaune)",
+      "chilli_pepper_red_and_green": "Piment (rouge et vert)",
+      "zucchini": "Courgette",
+      "cucumber": "Concombre",
+      "eggplant": "Aubergine",
+      "spinach": "Épinards",
+      "carrot": "Carotte",
+      "lemon": "Citron",
+      "potatoes": "Pommes de terre",
+      "onion": "Oignon",
+      "sweet_potato": "Patate douce",
+      "cauliflower": "Chou-fleur",
+      "garlic_peeled_garlic": "Ail/Ail pelé",
+      "spring_onion": "Oignon vert",
+      "turnip": "Navet",
+      "cherry_tomato": "Tomate cerise",
+      "broccoli": "Brocoli",
+      "celery": "Céleri",
+      "rosemary": "Romarin",
+      "beetroot": "Betterave",
+      "mushroom": "Champignon",
+      "okra": "Gombo",
+      "grape_leaves": "Feuilles de vigne",
+      "sweet_corn": "Maïs doux",
+      "coriander_leaves": "Feuilles de coriandre",
+      "sweet_basil": "Basilic doux",
+      "mint": "Menthe",
+      "lemon_grass": "Citronnelle",
+      "taro": "Taro",
+      "artichoke": "Artichaut",
+      "thyme": "Thym",
+      "lolo_rosso_lettuce": "Laitue lolo rosso",
+      "dill": "Aneth",
+      "curly_parsley": "Persil frisé",
+      "summer": "Été",
+      "autumn": "Automne",
+      "winter": "Hiver",
+      "spring": "Printemps",
+      "all_year": "Toute l'année",
+      "summer_autumn": "Été, Automne",
+      "autumn_winter": "Automne, Hiver",
+      "winter_spring": "Hiver, Printemps",
+      "5_kg_10_pun": "5 KG/10 unités",
+      "4_kg_ctn": "4 KG/Carton",
+      "15_kg_ctn": "15 KG/Carton",
+      "10_kg_ctn": "10 KG/Carton",
+      "2_5_kg_10_pun": "2,5 KG/10 unités",
+      "2_kg_ctn": "2 KG/Carton",
+      "7_kg_ctn": "7 KG/Carton",
+      "5_kg_ctn": "5 KG/Carton",
+      "3_kg_ctn": "3 KG/Carton",
+      "8_kg_ctn": "8 KG/Carton",
+      "6_kg_ctn": "6 KG/Carton",
+      "7_kg_bag": "7 KG/Sac",
+      "18_kg_bag": "18 KG/Sac",
+      "4_kg_16_pun": "4 KG/16 unités",
+      "7_plus_3kg_fum_30_percent_ice": "7+3KG/FUM (30% glace)",
+      "2_kg_10_pun": "2 KG/10 unités",
+      "4_kg_ctn_28_bunches": "4 KG/Carton (28 bottes)",
+      "chilli_dry_and_powder": "Piment sec et en poudre",
+      "mix_vegetables": "Mélange de légumes"
     }
   },
   "certifications": {
@@ -76,11 +178,11 @@
     "items": {
       "iso": {
         "title": "ISO 22000",
-        "description": "Garantir des systèmes de gestion de la sécurité alimentaire de premier ordre tout au long de nos opérations."
+        "description": "Garantir des systèmes de gestion de la sécurité alimentaire de premier ordre dans toutes nos opérations."
       },
       "haccp": {
         "title": "HACCP",
-        "description": "Conformité avec les normes de l'Analyse des dangers et des points de contrôle critiques pour la sécurité alimentaire."
+        "description": "Conformité à l'analyse des dangers et points critiques pour la sécurité alimentaire."
       },
       "globalGap": {
         "title": "GLOBALG.A.P.",
@@ -95,7 +197,7 @@
   "global": {
     "title": "Notre présence mondiale",
     "subtitle": "Livraison de produits frais à des clients sur six continents",
-    "trusted": "Fiable pour les clients de",
+    "trusted": "Approuvé par des clients dans",
     "countries": "Plus de 30 pays",
     "across": "À travers le monde",
     "regions": {
@@ -105,7 +207,7 @@
       },
       "middleEast": {
         "name": "Moyen-Orient",
-        "countries": "Émirats Arabes Unis, Arabie Saoudite, Qatar, Koweït, Bahreïn"
+        "countries": "Émirats arabes unis, Arabie saoudite, Qatar, K  Kuwait, Bahreïn"
       },
       "asia": {
         "name": "Asie",
@@ -113,7 +215,7 @@
       },
       "africa": {
         "name": "Afrique",
-        "countries": "Maroc, Afrique du Sud, Kenya, Nigéria"
+        "countries": "Maroc, Afrique du Sud, Kenya, Nigeria"
       },
       "northAmerica": {
         "name": "Amérique du Nord",
@@ -127,39 +229,55 @@
   },
   "contact": {
     "title": "Contactez-nous",
-    "subtitle": "Vous avez des questions ou êtes intéressé par nos produits ? N'hésitez pas à nous contacter.",
+    "subtitle": "Avez-vous des questions ou êtes-vous intéressé par nos produits ? N'hésitez pas à nous contacter.",
     "info": {
       "title": "Informations de contact",
-      "email": "Email",
+      "email": "E-mail",
       "phone": "Numéro de téléphone",
-      "address": "Adresse"
+      "address": "Adresse",
+      "website": "Site web",
+      "contactPerson": "Personne à contacter",
+      "mainOffice": {
+        "title": "Bureau principal du groupe Al Sakr",
+        "address": "80 km Route désertique Le Caire-Alexandrie, à côté des fermes Dina Othman, Sadat, Égypte"
+      },
+      "marketingSales": {
+        "title": "Département marketing et ventes"
+      },
+      "financeAccounts": {
+        "title": "Département finances et comptabilité"
+      },
+      "italyHeadOffice": {
+        "title": "Siège social en Italie",
+        "address": "Via Valleambrosia 75, 20089 Rozzano, Milan, Italie"
+      }
     },
     "businessHours": {
-      "title": "Horaires d'ouverture",
-      "mondayFriday": "Du lundi au vendredi : 9h00 - 17h00",
+      "title": "Heures d'ouverture",
+      "mondayFriday": "Lundi au vendredi : 9h00 - 17h00",
       "saturday": "Samedi : 9h00 - 13h00",
       "sunday": "Dimanche : Fermé"
     },
     "form": {
       "title": "Envoyer un message",
       "name": "Nom",
-      "email": "Email",
+      "email": "E-mail",
       "message": "Message",
       "namePlaceholder": "Votre nom",
-      "emailPlaceholder": "Votre email",
+      "emailPlaceholder": "Votre e-mail",
       "messagePlaceholder": "Écrivez votre message ici...",
       "send": "Envoyer le message",
       "sending": "Envoi en cours...",
       "successTitle": "Message envoyé avec succès",
-      "successDescription": "Nous vous répondrons dans les plus brefs délais.",
+      "successDescription": "Nous vous répondrons dès que possible.",
       "errorTitle": "Échec de l'envoi du message",
-      "errorDescription": "Une erreur s'est produite. Veuillez réessayer plus tard."
+      "errorDescription": "Quelque chose s'est mal passé. Veuillez réessayer plus tard."
     }
   },
   "footer": {
-    "description": "Exportation de fruits et légumes de haute qualité depuis l'Égypte depuis 2002, avec un engagement envers la qualité et la durabilité.",
+    "description": "Exportation de fruits et légumes de première qualité depuis l'Égypte depuis 2002, avec un engagement envers la qualité et la durabilité.",
     "contact": "Contact",
-    "based": "Basé en Égypte, servant le monde",
+    "based": "Basé en Égypte, au service du monde",
     "explore": "Explorer",
     "about": "À propos",
     "services": "Services",

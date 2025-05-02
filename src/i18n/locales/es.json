@@ -9,65 +9,167 @@
     "contact": "Contacto"
   },
   "hero": {
-    "title": "Frescura entregada a nivel mundial",
-    "subtitle": "Exportación de frutas y verduras de alta calidad desde Egipto desde 2002, con un compromiso con la calidad y la sostenibilidad.",
-    "connectButton": "Contáctanos",
-    "learnButton": "Aprender más"
+    "title": "Frescura entregada globalmente",
+    "subtitle": "Exportando frutas y verduras de primera calidad desde Egipto desde 2002, con un compromiso con la calidad y la sostenibilidad.",
+    "connectButton": "Conéctate con nosotros",
+    "learnButton": "Saber más"
   },
   "about": {
     "title": "Quiénes somos",
     "subtitle": "Exportación de productos de calidad premium desde 2002",
-    "description1": "Desde 2002, Al Sakr Group ha sido el principal exportador de frutas y verduras frescas y de alta calidad de Egipto. Nuestra pasión por la excelencia nos impulsa a llevar los mejores productos a los mercados internacionales.",
-    "description2": "Nos enfocamos en la sostenibilidad, la innovación y asociaciones sólidas para garantizar que cada producto, desde la granja hasta la mesa, cumpla con los más altos estándares de calidad y frescura.",
+    "description1": "Desde 2002, Al Sakr Group ha sido el principal exportador de Egipto de frutas y verduras frescas de alta calidad. Nuestra pasión por la excelencia nos impulsa a entregar los mejores productos a los mercados internacionales.",
+    "description2": "Priorizamos la sostenibilidad, la innovación y las asociaciones sólidas, asegurando que cada producto, desde la granja hasta la mesa, cumpla con los más altos estándares de calidad y frescura.",
     "features": {
       "quality": "Garantía de calidad",
       "delivery": "Entrega puntual",
-      "standards": "Normas globales"
+      "standards": "Estándares globales"
     }
   },
   "services": {
     "title": "Nuestros servicios",
-    "subtitle": "Soluciones completas para la exportación global de productos",
+    "subtitle": "Soluciones integrales para la exportación global de productos",
     "items": {
       "sorting": {
-        "title": "Clasificación y embalaje",
-        "description": "Clasificación precisa y embalaje ecológico para preservar la frescura natural de nuestros productos."
+        "title": "Clasificación y empaque",
+        "description": "Clasificación precisa y empaque ecológico para preservar la frescura natural de nuestros productos."
       },
       "cooling": {
         "title": "Refrigeración y almacenamiento",
-        "description": "Tecnología de refrigeración moderna para mantener la calidad óptima durante el almacenamiento."
+        "description": "Tecnología de refrigeración avanzada para mantener la calidad óptima durante el almacenamiento."
       },
       "logistics": {
         "title": "Logística global",
-        "description": "Entrega sin problemas para garantizar que sus productos lleguen frescos a cualquier parte del mundo."
+        "description": "Entrega sin problemas para asegurar que tus productos lleguen frescos a cualquier parte del mundo."
       },
       "farming": {
         "title": "Agricultura sostenible",
-        "description": "Prácticas agrícolas ecológicas que respetan el medio ambiente mientras aseguran calidad."
+        "description": "Prácticas agrícolas respetuosas con el medio ambiente que garantizan la calidad."
       },
       "quality": {
         "title": "Control de calidad",
-        "description": "Pruebas de calidad rigurosas en cada etapa, desde la granja hasta el envío."
+        "description": "Controles rigurosos de calidad en cada etapa, desde la granja hasta el envío."
       },
       "market": {
         "title": "Análisis de mercado",
-        "description": "Perspectivas de expertos sobre las tendencias del mercado global y las preferencias del consumidor."
+        "description": "Perspectivas expertas sobre tendencias del mercado global y preferencias de los consumidores."
       }
     }
   },
   "products": {
     "title": "Nuestros productos premium",
-    "subtitle": "Descubre nuestra gama de productos orgánicos, de temporada y exóticos, provenientes de granjas de confianza",
+    "subtitle": "Explora nuestra gama de productos orgánicos, de temporada y exóticos, obtenidos de granjas confiables",
     "viewCatalog": "Ver catálogo completo",
+    "showLess": "Ver menos",
+    "season": "Temporada",
+    "packing": "Empaque",
+    "tabs": {
+      "frozen": "Productos congelados",
+      "dry": "Productos secos y en polvo",
+      "fresh": "Productos frescos"
+    },
     "items": {
+      "mix_berries": "Mezcla de bayas",
+      "green_grapes": "Uvas verdes",
+      "red_grapes": "Uvas rojas",
+      "black_grapes": "Uvas negras",
+      "molokhia": "Molokhia",
+      "muskmelon": "Melón cantalupo",
+      "dragon_fruit": "Fruta del dragón",
+      "yellow_dates": "Dátiles amarillos",
+      "pineapple": "Piña",
       "tangerines": "Mandarinas",
-      "strawberries": "Fresas",
+      "strawberry": "Fresas",
       "pomegranates": "Granadas",
       "tomatoes": "Tomates",
       "grapes": "Uvas",
-      "bellPeppers": "Pimientos",
-      "oranges": "Naranjas",
-      "greenBeans": "Judías verdes"
+      "bell_peppers": "Pimientos morrones",
+      "orange": "Naranjas",
+      "green_beans": "Judías verdes",
+      "mango": "Mango",
+      "mandarin": "Mandarina",
+      "grapefruit": "Pomelo",
+      "fig": "Higo",
+      "peach": "Melocotón",
+      "guava": "Guayaba",
+      "rockmelon": "Melón roca",
+      "bananas": "Plátanos",
+      "watermelon": "Sandía",
+      "plum": "Ciruela",
+      "apricot": "Albaricoque",
+      "kiwi": "Kiwi",
+      "persimmon": "Caqui",
+      "pear": "Pera",
+      "custard_apple": "Chirimoya",
+      "avocado": "Aguacate",
+      "pumpkin": "Calabaza",
+      "red_dates": "Dátiles rojos",
+      "yellow_dates_barhi": "Dátiles amarillos (Barhi)",
+      "dates_majdul": "Dátiles (Majdul)",
+      "dates_sugary": "Dátiles (Sugary)",
+      "green_peas": "Guisantes verdes",
+      "cabbage_white_and_red": "Repollo (blanco y rojo)",
+      "iceberg_lettuce_green_cos_chinese_lettuce": "Lechuga iceberg/Lechuga romana/Lechuga china",
+      "capsicum_green_red_yellow": "Pimientos (verde, rojo, amarillo)",
+      "chilli_pepper_red_and_green": "Chile (rojo y verde)",
+      "zucchini": "Calabacín",
+      "cucumber": "Pepino",
+      "eggplant": "Berenjena",
+      "spinach": "Espinacas",
+      "carrot": "Zanahoria",
+      "lemon": "Limón",
+      "potatoes": "Patatas",
+      "onion": "Cebolla",
+      "sweet_potato": "Batata",
+      "cauliflower": "Coliflor",
+      "garlic_peeled_garlic": "Ajo/Ajo pelado",
+      "spring_onion": "Cebolleta",
+      "turnip": "Nabo",
+      "cherry_tomato": "Tomate cherry",
+      "broccoli": "Brócoli",
+      "celery": "Apio",
+      "rosemary": "Romero",
+      "beetroot": "Remolacha",
+      "mushroom": "Champiñón",
+      "okra": "Okra",
+      "grape_leaves": "Hojas de parra",
+      "sweet_corn": "Maíz dulce",
+      "coriander_leaves": "Hojas de cilantro",
+      "sweet_basil": "Albahaca dulce",
+      "mint": "Menta",
+      "lemon_grass": "Hierba limón",
+      "taro": "Taro",
+      "artichoke": "Alcachofa",
+      "thyme": "Tomillo",
+      "lolo_rosso_lettuce": "Lechuga lolo rosso",
+      "dill": "Eneldo",
+      "curly_parsley": "Perejil rizado",
+      "summer": "Verano",
+      "autumn": "Otoño",
+      "winter": "Invierno",
+      "spring": "Primavera",
+      "all_year": "Todo el año",
+      "summer_autumn": "Verano, Otoño",
+      "autumn_winter": "Otoño, Invierno",
+      "winter_spring": "Invierno, Primavera",
+      "5_kg_10_pun": "5 KG/10 unidades",
+      "4_kg_ctn": "4 KG/Caja",
+      "15_kg_ctn": "15 KG/Caja",
+      "10_kg_ctn": "10 KG/Caja",
+      "2_5_kg_10_pun": "2.5 KG/10 unidades",
+      "2_kg_ctn": "2 KG/Caja",
+      "7_kg_ctn": "7 KG/Caja",
+      "5_kg_ctn": "5 KG/Caja",
+      "3_kg_ctn": "3 KG/Caja",
+      "8_kg_ctn": "8 KG/Caja",
+      "6_kg_ctn": "6 KG/Caja",
+      "7_kg_bag": "7 KG/Bolsa",
+      "18_kg_bag": "18 KG/Bolsa",
+      "4_kg_16_pun": "4 KG/16 unidades",
+      "7_plus_3kg_fum_30_percent_ice": "7+3KG/FUM (30% hielo)",
+      "2_kg_10_pun": "2 KG/10 unidades",
+      "4_kg_ctn_28_bunches": "4 KG/Caja (28 manojos)",
+      "chilli_dry_and_powder": "Chile seco y en polvo",
+      "mix_vegetables": "Mezcla de verduras"
     }
   },
   "certifications": {
@@ -80,24 +182,24 @@
       },
       "haccp": {
         "title": "HACCP",
-        "description": "Cumplimiento con los estándares de Análisis de Peligros y Puntos Críticos de Control para la seguridad alimentaria."
+        "description": "Cumplimiento de Análisis de Peligros y Puntos Críticos de Control para la seguridad alimentaria."
       },
       "globalGap": {
         "title": "GLOBALG.A.P.",
-        "description": "Cumplimiento de buenas prácticas agrícolas para una agricultura sostenible."
+        "description": "Adherencia a Buenas Prácticas Agrícolas para una agricultura sostenible."
       },
       "organic": {
-        "title": "Certificación orgánica",
-        "description": "Cumplimiento de estrictos estándares para el cultivo de productos orgánicos."
+        "title": "Certificación Orgánica",
+        "description": "Cumpliendo con estándares estrictos para el cultivo de productos orgánicos."
       }
     }
   },
   "global": {
     "title": "Nuestra presencia global",
-    "subtitle": "Entrega de productos frescos a clientes en seis continentes",
+    "subtitle": "Entregando productos frescos a clientes en seis continentes",
     "trusted": "Confiado por clientes en",
     "countries": "Más de 30 países",
-    "across": "A través del mundo",
+    "across": "En todo el mundo",
     "regions": {
       "europe": {
         "name": "Europa",
@@ -105,7 +207,7 @@
       },
       "middleEast": {
         "name": "Oriente Medio",
-        "countries": "Emiratos Árabes Unidos, Arabia Saudita, Catar, Kuwait, Bahréin"
+        "countries": "Emiratos Árabes Unidos, Arabia Saudita, Qatar, Kuwait, Baréin"
       },
       "asia": {
         "name": "Asia",
@@ -127,21 +229,37 @@
   },
   "contact": {
     "title": "Contáctanos",
-    "subtitle": "¿Tienes preguntas o estás interesado en nuestros productos? Contáctanos con gusto.",
+    "subtitle": "¿Tienes alguna pregunta o estás interesado en nuestros productos? No dudes en contactarnos.",
     "info": {
       "title": "Información de contacto",
       "email": "Correo electrónico",
       "phone": "Número de teléfono",
-      "address": "Dirección"
+      "address": "Dirección",
+      "website": "Sitio web",
+      "contactPerson": "Persona de contacto",
+      "mainOffice": {
+        "title": "Oficina principal de Al Sakr Group",
+        "address": "Km 80 Carretera Desértica El Cairo-Alejandría, junto a las granjas Dina Othman, Sadat, Egipto"
+      },
+      "marketingSales": {
+        "title": "Departamento de Marketing y Ventas"
+      },
+      "financeAccounts": {
+        "title": "Departamento de Finanzas y Cuentas"
+      },
+      "italyHeadOffice": {
+        "title": "Oficina principal en Italia",
+        "address": "Via Valleambrosia 75, 20089 Rozzano, Milán, Italia"
+      }
     },
     "businessHours": {
       "title": "Horario de atención",
-      "mondayFriday": "Lunes a Viernes: 9:00 - 17:00",
-      "saturday": "Sábado: 9:00 - 13:00",
+      "mondayFriday": "Lunes a viernes: 9:00 AM - 5:00 PM",
+      "saturday": "Sábado: 9:00 AM - 1:00 PM",
       "sunday": "Domingo: Cerrado"
     },
     "form": {
-      "title": "Enviar mensaje",
+      "title": "Enviar un mensaje",
       "name": "Nombre",
       "email": "Correo electrónico",
       "message": "Mensaje",
@@ -152,14 +270,14 @@
       "sending": "Enviando...",
       "successTitle": "Mensaje enviado con éxito",
       "successDescription": "Te responderemos lo antes posible.",
-      "errorTitle": "Error al enviar el mensaje",
-      "errorDescription": "Ha ocurrido un error. Intenta nuevamente más tarde."
+      "errorTitle": "No se pudo enviar el mensaje",
+      "errorDescription": "Algo salió mal. Por favor, intenta de nuevo más tarde."
     }
   },
   "footer": {
-    "description": "Exportación de frutas y verduras de alta calidad desde Egipto desde 2002, con un compromiso con la calidad y la sostenibilidad.",
+    "description": "Exportando frutas y verduras de primera calidad desde Egipto desde 2002, con un compromiso con la calidad y la sostenibilidad.",
     "contact": "Contacto",
-    "based": "Con sede en Egipto, con operaciones globales",
+    "based": "Con sede en Egipto, sirviendo al mundo",
     "explore": "Explorar",
     "about": "Sobre nosotros",
     "services": "Servicios",

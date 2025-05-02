@@ -1,7 +1,6 @@
 import { ArrowDown } from "lucide-react";
 import { Button } from "../ui/button";
 import { useTranslation } from "react-i18next";
-
 const Hero = () => {
   const { t } = useTranslation();
 
@@ -20,16 +19,23 @@ const Hero = () => {
       id="home"
       className="relative flex items-center justify-center min-h-screen overflow-hidden"
     >
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage:
-            'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://res.cloudinary.com/dimy2zhcs/image/upload/v1745250144/landing/hero_v4tbdt.jpg")',
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      />
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+          style={{ minHeight: "100vh" }}
+        >
+          <source src="https://res.cloudinary.com/dimy2zhcs/video/upload/v1746131972/hero-vidoe_thnr0r.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div
+          className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30"
+          style={{ zIndex: 1 }}
+        />
+      </div>
 
       <div
         className="container relative z-10 px-4 mx-auto text-center"
@@ -48,7 +54,7 @@ const Hero = () => {
             className="text-lg font-medium"
             onClick={() => scrollToSection("contact")}
           >
-          {t("hero.connectButton")}
+            {t("hero.connectButton")}
           </Button>
           <Button
             variant="outline"
@@ -56,7 +62,7 @@ const Hero = () => {
             className="text-lg font-medium text-black dark:text-white hover:text-white hover:bg-white/20"
             onClick={() => scrollToSection("about")}
           >
-          {t("hero.learnButton")}
+            {t("hero.learnButton")}
           </Button>
         </div>
 

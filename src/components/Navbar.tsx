@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { LanguageSelector } from "./LanguageSelector";
 import { useTranslation } from "react-i18next";
+import LOGO from "../images/logo.png"
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
   const [scrolled, setScrolled] = useState(false);
@@ -77,7 +78,7 @@ const Navbar = () => {
               scrollToSection("home");
             }}
           >
-            <img src="/logo.png" alt="Logo" className="max-w-[50px]"/>
+            <img src={LOGO} alt="Logo" className="max-w-[50px]"/>
           </a>
 
           {/* Desktop Navigation */}

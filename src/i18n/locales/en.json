@@ -1,12 +1,13 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About",
-    "services": "Services",
-    "products": "Products",
+    "about": "About us",
+    "services": "services",
+    "products": "products",
     "certifications": "Certifications",
-    "globalReach": "Global Reach",
-    "contact": "Contact"
+    "globalReach": "World wide",
+    "contact": "Contact us",
+    "languages":"languages"
   },
   "hero": {
     "title": "Freshness Delivered Globally",

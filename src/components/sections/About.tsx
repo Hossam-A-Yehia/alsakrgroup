@@ -4,15 +4,15 @@ import { SectionHeading } from "../ui/section-heading";
 import { Award, Clock, Globe } from "lucide-react";
 
 const About = () => {
-  const { t } = useTranslation();
+  const {t,i18n} = useTranslation();
+
   return (
-    <section id="about" className="py-20 md:py-32 bg-background">
+    <section id="about" className="py-20 md:py-32 bg-background" dir="ltr">
       <Container>
         <SectionHeading
           title={t("about.title")}
           subtitle={t("about.subtitle")}
         />
-
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
           <div data-aos="fade-right" data-aos-duration="1000">
             <div className="overflow-hidden shadow-xl rounded-2xl">
@@ -25,16 +25,17 @@ const About = () => {
           </div>
 
           <div
-            className="space-y-6"
+            className="space-y-6 "
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="200"
-          >
-            <p className="text-lg text-muted-foreground">
+            dir={i18n.language === 'ar-EG' ? 'rtl' : 'ltr'}
+            >
+            <p className="text-md text-muted-foreground">
               {t("about.description1")}{" "}
             </p>
 
-            <p className="text-lg text-muted-foreground">
+            <p className="text-md text-muted-foreground">
               {t("about.description2")}{" "}
             </p>
 

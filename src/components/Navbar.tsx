@@ -1,21 +1,30 @@
 import { useState, useEffect } from "react";
-import { Moon, Sun, Menu } from "lucide-react";
-import { useTheme } from "./theme-provider";
+import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { LanguageSelector } from "./LanguageSelector";
 import { useTranslation } from "react-i18next";
-import LOGO from "../images/logo.png"
+import LOGO from "../images/logo.png";
+
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaTwitter,
+  FaLinkedinIn,
+  FaTiktok,
+  FaWhatsapp,
+} from "react-icons/fa";
+
 const Navbar = () => {
-  const { theme, setTheme } = useTheme();
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     setScrolled(scrollPosition > 50);
 
-    // Determine active section
     const sections = [
       "home",
       "about",
@@ -35,7 +44,7 @@ const Navbar = () => {
     }
   };
 
-  const scrollToSection = (sectionId: string) => {
+  const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
       window.scrollTo({
@@ -62,98 +71,196 @@ const Navbar = () => {
 
   return (
     <nav
+      dir="ltr"
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
           ? "bg-background/95 shadow-md backdrop-blur-sm"
           : "bg-transparent"
       }`}
     >
-      <div className="container px-4 py-4 mx-auto">
-        <div className="flex items-center justify-between">
-          <a
-            href="#home"
-            className="text-2xl font-bold text-primary"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("home");
-            }}
-          >
-            <img src={LOGO} alt="Logo" className="max-w-[50px]"/>
-          </a>
-
-          {/* Desktop Navigation */}
-          <div className="hidden  md:flex gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.id}
-                href={`#${link.id}`}
-                className={`${
-                  activeSection === link.id
-                    ? "text-primary font-medium"
-                    : `${
-                        scrolled ? "text-muted-foreground" : "text-white"
-                      } hover:text-primary transition-colors`
-                }`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection(link.id);
-                }}
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
-
-          <div className="flex items-center space-x-4">
-            <LanguageSelector scrolled={scrolled} />
-
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              aria-label="Toggle theme"
+      <div className="container px-4 sm:px-6 md:px-[110px] py-4 mx-auto">
+        <div className="flex items-center justify-between w-full">
+          {/* Logo and WhatsApp */}
+          <div className="flex items-center gap-4 sm:gap-6">
+            <a
+              href="#home"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("home");
+              }}
+              className="flex items-center gap-2 flex-col justify-center"
             >
-              {theme === "dark" ? (
-                <Sun className="w-5 h-5" />
-              ) : (
-                <Moon
-                  className={`w-5 h-5 ${
-                    scrolled ? "text-muted-foreground" : "text-white"
-                  }`}
-                />
-              )}
-            </Button>
-
-            {/* Mobile menu button */}
-            <Sheet>
-              <SheetTrigger asChild className="md:hidden">
-                <Button variant="ghost" size="icon">
-                  <Menu className="w-5 h-5" />
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-                <nav className="flex flex-col gap-4 mt-8">
-                  {navLinks.map((link) => (
-                    <a
-                      key={link.id}
-                      href={`#${link.id}`}
-                      className={`${
-                        activeSection === link.id
-                          ? "text-primary font-medium"
-                          : "text-muted-foreground"
-                      } py-2 text-lg hover:text-primary transition-colors`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        scrollToSection(link.id);
-                      }}
-                    >
-                      {link.label}
-                    </a>
-                  ))}
-                </nav>
-              </SheetContent>
-            </Sheet>
+              <img
+                src={LOGO}
+                alt="Logo"
+                className="w-[80px] sm:w-[100px] md:w-[120px]"
+              />
+              <div className="flex flex-col items-center">
+                <span className="font-bold text-sm sm:text-md">
+                  Al Sakr Group
+                </span>
+                <span className="text-xs">Sorting, Packing and Colling</span>
+                <span className="text-xs">Import & Export</span>
+              </div>
+            </a>
           </div>
+
+          {/* Desktop Navigation and Socials */}
+          <div className="hidden md:flex flex-col items-center">
+            <span
+              dir="ltr"
+              className="flex text-lg font-semibold text-white mb-2 gap-2 items-center"
+            >
+              <div className="bg-[#25D366] rounded-full p-1">
+                <FaWhatsapp size={20} color="white" />
+              </div>
+              +201040106194
+            </span>
+
+            <div className="flex gap-2 text-md">
+              <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                <div className="bg-[#1877F2] rounded-full p-2">
+                  <FaFacebookF color="white" />
+                </div>
+              </a>
+              <a href="https://tiktok.com" target="_blank" rel="noreferrer">
+                <div className="bg-black rounded-full p-2">
+                  <FaTiktok color="white" />
+                </div>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                <div className="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 rounded-full p-2">
+                  <FaInstagram color="white" />
+                </div>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noreferrer">
+                <div className="bg-[#FF0000] rounded-full p-2">
+                  <FaYoutube color="white" />
+                </div>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noreferrer">
+                <div className="bg-[#1DA1F2] rounded-full p-2">
+                  <FaTwitter color="white" />
+                </div>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+                <div className="bg-[#0077B5] rounded-full p-2">
+                  <FaLinkedinIn color="white" />
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div className="hidden md:flex flex-col gap-2 items-center justify-center">
+            <div
+              className="flex flex-wrap gap-4"
+              dir={`${i18n.language === "ar-EG" ? "rtl" : "ltr"}`}
+            >
+              {navLinks.map((link) => (
+                <a
+                  key={link.id}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(link.id);
+                  }}
+                  className={`${
+                    activeSection === link.id
+                      ? `text-red-700 font-bold ${
+                          i18n.language === "ar-EG" ? "text-lg" : "text-sm"
+                        }`
+                      : `text-white hover:text-red-700 transition-colors font-bold cursor-pointer ${
+                          i18n.language === "ar-EG" ? "text-lg" : "text-sm"
+                        }`
+                  }`}
+                >
+                  {link.label}
+                </a>
+              ))}
+              <LanguageSelector scrolled={scrolled} />
+            </div>
+          </div>
+
+          {/* Mobile Navigation */}
+          <Sheet>
+            <SheetTrigger asChild className="md:hidden">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-white hover:bg-gray-200"
+              >
+                <Menu className="w-6 h-6" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[80vw] max-w-[400px]">
+              <nav className="flex flex-col gap-1 mt-8">
+                {navLinks.map((link) => (
+                  <a
+                    key={link.id}
+                    href={`#${link.id}`}
+                    className={`${
+                      activeSection === link.id
+                        ? "text-red-600 font-medium"
+                        : "text-muted-foreground"
+                    } py-3 text-lg hover:text-red-600 transition-colors`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection(link.id);
+                    }}
+                  >
+                    {link.label}
+                  </a>
+                ))}
+                <LanguageSelector scrolled={scrolled} />
+              </nav>
+
+              {/* Mobile Socials */}
+              <div className="mt-6 border-t pt-4">
+                <span className="block text-sm text-muted-foreground mb-2">
+                  📞 +201040106194
+                </span>
+                <div className="flex gap-4 text-xl">
+                  <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaFacebookF />
+                  </a>
+                  <a href="https://tiktok.com" target="_blank" rel="noreferrer">
+                    <FaTiktok />
+                  </a>
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaInstagram />
+                  </a>
+                  <a
+                    href="https://youtube.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaYoutube />
+                  </a>
+                  <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaTwitter />
+                  </a>
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaLinkedinIn />
+                  </a>
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </nav>

@@ -25,14 +25,14 @@ const Hero = () => {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover md:object-contain"
           style={{ minHeight: "100vh" }}
         >
           <source src="https://res.cloudinary.com/dimy2zhcs/video/upload/v1746131972/hero-vidoe_thnr0r.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div
-          className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30"
+          className="absolute inset-0 bg-gradient-to-t from-black/20 to-black/30"
           style={{ zIndex: 1 }}
         />
       </div>
@@ -42,16 +42,16 @@ const Hero = () => {
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <h1 className="mb-6 text-4xl font-bold text-white md:text-5xl lg:text-6xl">
+        <h1 className="mb-6 text-2xl font-bold text-white md:text-3xl lg:text-4xl">
           {t("hero.title")}
         </h1>
-        <p className="max-w-2xl mx-auto mb-8 text-lg md:text-xl text-white/80">
+        <p className="max-w-2xl mx-auto mb-8 text-md md:text-lg text-white font-bold">
           {t("hero.subtitle")}
         </p>
         <div className="flex flex-col justify-center gap-4 sm:flex-row">
           <Button
             size="lg"
-            className="text-lg font-medium"
+            className="text-sm font-medium"
             onClick={() => scrollToSection("contact")}
           >
             {t("hero.connectButton")}
@@ -59,7 +59,7 @@ const Hero = () => {
           <Button
             variant="outline"
             size="lg"
-            className="text-lg font-medium text-black dark:text-white hover:text-white hover:bg-white/20"
+            className="text-sm font-medium text-black dark:text-white hover:text-white hover:bg-white/20"
             onClick={() => scrollToSection("about")}
           >
             {t("hero.learnButton")}

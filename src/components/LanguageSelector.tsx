@@ -1,12 +1,10 @@
 import { useTranslation } from "react-i18next";
-import { Button } from "./ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
-import { Languages } from "lucide-react";
 import IMG_EN from "../images/flags/us.png";
 import IMG_IT from "../images/flags/it.png";
 import IMG_AR from "../images/flags/eg.png";
@@ -17,7 +15,7 @@ import IMG_RU from "../images/flags/ru.png";
 import IMG_UR from "../images/flags/in.png";
 const languages = [
   { code: "en", name: "English", flag: IMG_EN },
-  { code: "ar", name: "العربية", flag: IMG_AR },
+  { code: "ar-EG", name: "العربية", flag: IMG_AR },
   { code: "it", name: "Italiano", flag: IMG_IT },
   { code: "es", name: "Español", flag: IMG_ES },
   { code: "fr", name: "Français", flag: IMG_FR },
@@ -27,16 +25,18 @@ const languages = [
 ];
 
 export function LanguageSelector({ scrolled }: any) {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon">
-          <Languages
-            className={`h-5 w-5 ${scrolled ? "text-black" : "text-white"}`}
-          />
-        </Button>
+        <a
+          className={` cursor-pointer font-bold  ${
+            i18n.language === "ar-EG" ?"text-lg" : "text-sm"
+          } ${"text-white"} hover:text-red-600 transition-colors`}
+        >
+          {t("nav.languages")}
+        </a>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         {languages.map((lang) => (

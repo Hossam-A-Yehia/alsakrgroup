@@ -19,7 +19,7 @@ function App() {
 const {i18n}= useTranslation()
   return (
     <div className={`${i18n.language === "ar-EG"? "dir-rtl" : "dir-ltr"}`}>
-    <ThemeProvider defaultTheme="light" storageKey="al-sakr-theme">
+    <ThemeProvider defaultTheme="dark" storageKey="al-sakr-theme">
       <div className={`min-h-screen bg-background text-foreground antialiased `}>
         <Navbar />
         <main>

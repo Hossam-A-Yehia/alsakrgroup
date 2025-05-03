@@ -38,7 +38,7 @@ const Navbar = () => {
 
     for (const section of sections.reverse()) {
       const element = document.getElementById(section);
-      if (element && scrollPosition >= element.offsetTop - 100) {
+      if (element && scrollPosition >= element.offsetTop - 400) {
         setActiveSection(section);
         break;
       }
@@ -49,7 +49,7 @@ const Navbar = () => {
     const element = document.getElementById(sectionId);
     if (element) {
       window.scrollTo({
-        top: element.offsetTop - 80,
+        top: element.offsetTop - 40,
         behavior: "smooth",
       });
     }
@@ -79,8 +79,8 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container px-0  md:px-[110px] py-4 mx-auto">
-        <div className="flex items-center justify-between">
+      <div className="container px-0  md:px-[110px] py-4 mx-auto mt-2">
+        <div className="flex items-start justify-between">
           {/* Logo and Socials */}
           <div className="flex items-center gap-7">
             <a

@@ -200,7 +200,7 @@ const Contact = () => {
             data-aos-delay="200"
           >
             <CardContent className="p-6">
-              <h3 className="text-2xl font-bold mb-4 text-primary dark:text-primary-foreground">
+              <h3 className="text-2xl font-bold mb-4 text-primary dark:text-white">
                 {t("contact.info.title")}
               </h3>
 
@@ -278,7 +278,7 @@ const Contact = () => {
               </div>
 
               <div className="mt-6">
-                <h3 className="text-lg font-semibold mb-2 text-primary dark:text-primary-foreground">
+                <h3 className="text-lg font-semibold mb-2 text-primary dark:text-white">
                   {t("contact.businessHours.title")}
                 </h3>
                 <p className="text-sm text-muted-foreground">
@@ -300,7 +300,7 @@ const Contact = () => {
             data-aos-delay="200"
           >
             <CardContent className="p-6">
-              <h3 className="text-2xl font-bold mb-4 text-primary dark:text-primary-foreground">
+              <h3 className="text-2xl font-bold mb-4 text-primary dark:text-white">
                 {t("contact.form.title")}
               </h3>
 

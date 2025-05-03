@@ -20,6 +20,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const { t, i18n } = useTranslation();
+  console.log(i18n.language);
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
@@ -44,7 +45,7 @@ const Navbar = () => {
     }
   };
 
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       window.scrollTo({
@@ -78,34 +79,31 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container px-4 sm:px-6 md:px-[110px] py-4 mx-auto">
-        <div className="flex items-center justify-between w-full">
-          {/* Logo and WhatsApp */}
-          <div className="flex items-center gap-4 sm:gap-6">
+      <div className="container px-0  md:px-[110px] py-4 mx-auto">
+        <div className="flex items-center justify-between">
+          {/* Logo and Socials */}
+          <div className="flex items-center gap-7">
             <a
               href="#home"
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection("home");
               }}
-              className="flex items-center gap-2 flex-col justify-center"
+              className="flex items-center gap-2 text-md flex-col justify-center"
             >
-              <img
-                src={LOGO}
-                alt="Logo"
-                className="w-[80px] sm:w-[100px] md:w-[120px]"
-              />
-              <div className="flex flex-col items-center">
-                <span className="font-bold text-sm sm:text-md">
+              <img src={LOGO} alt="Logo" className="max-w-[70px] " />
+              <div className=" flex flex-col items-center">
+                <span className="font-bold text-xs md:text-md">
                   Al Sakr Group
                 </span>
-                <span className="text-xs">Sorting, Packing and Colling</span>
-                <span className="text-xs">Import & Export</span>
+                <span className="text-[8px] md:text-xs">
+                  Sorting, Packing and Colling
+                </span>
+                <span className="text-[8px] md:text-xs">Import & Export</span>
               </div>
             </a>
           </div>
 
-          {/* Desktop Navigation and Socials */}
           <div className="hidden md:flex flex-col items-center">
             <span
               dir="ltr"
@@ -150,10 +148,9 @@ const Navbar = () => {
               </a>
             </div>
           </div>
-
           <div className="hidden md:flex flex-col gap-2 items-center justify-center">
             <div
-              className="flex flex-wrap gap-4"
+              className="flex flex-wrap gap-2 "
               dir={`${i18n.language === "ar-EG" ? "rtl" : "ltr"}`}
             >
               {navLinks.map((link) => (
@@ -165,10 +162,10 @@ const Navbar = () => {
                   }}
                   className={`${
                     activeSection === link.id
-                      ? `text-red-700 font-bold ${
+                      ? `text-red-700 font-bold  ${
                           i18n.language === "ar-EG" ? "text-lg" : "text-sm"
                         }`
-                      : `text-white hover:text-red-700 transition-colors font-bold cursor-pointer ${
+                      : `${"text-white"} hover:text-red-700 transition-colors font-bold cursor-pointer  ${
                           i18n.language === "ar-EG" ? "text-lg" : "text-sm"
                         }`
                   }`}
@@ -183,15 +180,11 @@ const Navbar = () => {
           {/* Mobile Navigation */}
           <Sheet>
             <SheetTrigger asChild className="md:hidden">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="text-white hover:bg-gray-200"
-              >
-                <Menu className="w-6 h-6" />
+              <Button variant="ghost" size="icon">
+                <Menu className="w-5 h-5" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[80vw] max-w-[400px]">
+            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <nav className="flex flex-col gap-1 mt-8">
                 {navLinks.map((link) => (
                   <a
@@ -201,7 +194,7 @@ const Navbar = () => {
                       activeSection === link.id
                         ? "text-red-600 font-medium"
                         : "text-muted-foreground"
-                    } py-3 text-lg hover:text-red-600 transition-colors`}
+                    } py-2 text-lg hover:text-red-600 transition-colors`}
                     onClick={(e) => {
                       e.preventDefault();
                       scrollToSection(link.id);
@@ -216,7 +209,7 @@ const Navbar = () => {
               {/* Mobile Socials */}
               <div className="mt-6 border-t pt-4">
                 <span className="block text-sm text-muted-foreground mb-2">
-                  📞 +201040106194
+                  📞 01040106194
                 </span>
                 <div className="flex gap-4 text-xl">
                   <a

@@ -24,7 +24,7 @@ const languages = [
   { code: "ur", name: "اردو", flag: IMG_UR },
 ];
 
-export function LanguageSelector({ scrolled }: any) {
+export function LanguageSelector({  }: any) {
   const { i18n, t } = useTranslation();
 
   return (

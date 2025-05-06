@@ -49,7 +49,7 @@ const Navbar = () => {
     const element = document.getElementById(sectionId);
     if (element) {
       window.scrollTo({
-        top: element.offsetTop - 40,
+        top: element.offsetTop - 20,
         behavior: "smooth",
       });
     }
@@ -79,7 +79,7 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container px-0  md:px-[110px] py-4 mx-auto mt-2">
+      <div className="container px-0  md:px-[110px] pt-4 mx-auto">
         <div className="flex items-start justify-between">
           {/* Logo and Socials */}
           <div className="flex items-center gap-7">
@@ -91,15 +91,15 @@ const Navbar = () => {
               }}
               className="flex items-center gap-2 text-md flex-col justify-center"
             >
-              <img src={LOGO} alt="Logo" className="max-w-[70px] " />
+              <img src={LOGO} alt="Logo" className="max-w-[50px] " />
               <div className=" flex flex-col items-center">
                 <span className="font-bold text-xs md:text-md">
                   Al Sakr Group
                 </span>
-                <span className="text-[8px] md:text-xs">
+                <span className="text-[8px] md:text-[10px] ">
                   Sorting, Packing and Colling
                 </span>
-                <span className="text-[8px] md:text-xs">Import & Export</span>
+                <span className="text-[8px] md:text-[10px]">Import & Export</span>
               </div>
             </a>
           </div>

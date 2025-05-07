@@ -73,28 +73,28 @@ const Products = () => {
       {
         name: t("products.items.grapes"),
         image:
-          "https://images.pexels.com/photos/708777/pexels-photo-708777.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "/freshProducts/photo_3_2025-05-07_10-49-40.jpg",
         season: t("products.items.summer_autumn"),
         packing: t("products.items.5_kg_10_pun"),
       },
       {
         name: t("products.items.mango"),
         image:
-          "https://images.pexels.com/photos/2294471/pexels-photo-2294471.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "/freshProducts/photo_4_2025-05-07_10-49-40.jpg",
         season: t("products.items.summer_autumn"),
         packing: t("products.items.4_kg_ctn"),
       },
       {
         name: t("products.items.orange"),
         image:
-          "https://images.pexels.com/photos/1435735/pexels-photo-1435735.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "/freshProducts/photo_2_2025-05-07_10-49-40.jpg",
         season: t("products.items.winter"),
         packing: t("products.items.15_kg_ctn"),
       },
       {
         name: t("products.items.mandarin"),
         image:
-          "https://images.pexels.com/photos/327098/pexels-photo-327098.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "/freshProducts/photo_1_2025-05-07_10-49-40.jpg",
         season: t("products.items.winter"),
         packing: t("products.items.10_kg_ctn"),
       },
@@ -107,7 +107,7 @@ const Products = () => {
       {
         name: t("products.items.strawberry"),
         image:
-          "https://images.pexels.com/photos/46174/strawberries-berries-fruit-freshness-46174.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "/freshProducts/photo_2_2025-05-07_10-54-58.jpg",
         season: t("products.items.winter"),
         packing: t("products.items.2_5_kg_10_pun"),
       },
@@ -120,7 +120,7 @@ const Products = () => {
       {
         name: t("products.items.pomegranates"),
         image:
-          "https://images.pexels.com/photos/65256/pomegranate-open-cores-fruit-fruit-logistica-65256.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "/freshProducts/photo_1_2025-05-07_10-54-58.jpg",
         season: t("products.items.autumn_winter"),
         packing: t("products.items.4_kg_ctn"),
       },
@@ -945,7 +945,7 @@ const Products = () => {
     : products[activeTab].slice(0, 8);
 
   return (
-    <section id="products" className="py-20 md:py-32 bg-background">
+    <section id="our products" className="py-20 md:py-32 bg-background px-4 md:px-10 lg:px-16">
       <Container>
         <SectionHeading
           title={t("products.title")}
@@ -953,7 +953,7 @@ const Products = () => {
         />
 
         {/* Tabs */}
-        <div className="flex justify-center gap-4 mb-10 relative">
+        <div className="flex justify-center gap-4 mb-5 relative">
           {tabs.map((tab) => (
             <button
               key={tab.id}
@@ -961,8 +961,8 @@ const Products = () => {
                 setActiveTab(tab.id);
                 setShowAll(false);
               }}
-              className="relative px-4 py-2 text-lg font-medium transition-colors"
-            >
+              className="relative px-4 py-2 text-sm md:text-base lg:text-lg font-medium transition-colors"
+              >
               <span
                 className={
                   activeTab === tab.id
@@ -1007,16 +1007,25 @@ const Products = () => {
         </AnimatePresence>
         {products[activeTab].length > 8 && (
           <div className="mt-12 text-center" data-aos="fade-up">
-            <Button
-              variant="outline"
-              className="group"
-              onClick={() => setShowAll(!showAll)}
-            >
-              {showAll
-                ? t("products.showLess") || "Show Less"
-                : t("products.viewCatalog") || "View Catalog"}
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Button>
+           <Button 
+  variant="outline"
+  className="group"
+  onClick={() => {
+    setShowAll(!showAll);
+
+    // Scroll to section smoothly
+    const section = document.getElementById("our products");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
+>
+  {showAll
+    ? t("products.showLess") || "Show Less"
+    : t("products.viewCatalog") || "View Catalog"}
+  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+</Button>
+
           </div>
         )}
       </Container>

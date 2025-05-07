@@ -6,7 +6,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-primary text-primary-foreground pt-12 pb-8">
+    <footer className="bg-primary text-primary-foreground pt-12 pb-8 px-4 md:px-10 lg:px-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
@@ -18,7 +18,7 @@ const Footer = () => {
 
           <div>
             <h3 className="text-xl font-semibold mb-4">
-              {t("footer.contact")}
+              {t("footer.contact us")}
             </h3>
             <div className="space-y-3">
               <a
@@ -53,37 +53,37 @@ const Footer = () => {
                 href="#about"
                 className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
-                {t("footer.about")}{" "}
+                {t("footer.about us")}{" "}
               </a>
               <a
-                href="#services"
+                href="#our services"
                 className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
-                {t("footer.services")}{" "}
+                {t("footer.our services")}{" "}
               </a>
               <a
-                href="#products"
+                href="#our products"
                 className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
-                {t("footer.products")}{" "}
+                {t("footer.our products")}{" "}
               </a>
               <a
-                href="#certifications"
+                href="#languages"
                 className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
-                {t("footer.certifications")}{" "}
+                {t("footer.languages")}{" "}
               </a>
               <a
                 href="#global"
                 className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
-                {t("footer.globalReach")}{" "}
+                {t("footer.Worldwide")}{" "}
               </a>
               <a
                 href="#contact"
                 className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
-                {t("footer.contact")}{" "}
+                {t("footer.contact us")}{" "}
               </a>
             </div>
           </div>

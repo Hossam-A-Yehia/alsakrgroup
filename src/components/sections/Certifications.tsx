@@ -21,7 +21,7 @@ const CertificationCard = ({ title, description, delay = 0 }: CertificationCardP
         <div className="flex justify-center mb-6">
           <CheckCircle className="h-12 w-12 text-primary" />
         </div>
-        <h3 className="text-2xl font-semibold mb-4">{title}</h3>
+        <h3 className="text-xl font-semibold mb-4">{title}</h3>
         <p className="text-muted-foreground">{description}</p>
       </CardContent>
     </Card>
@@ -50,14 +50,14 @@ const Certifications = () => {
   ];
 
   return (
-    <section id="certifications" className="py-20 md:py-32 bg-muted/30">
+    <section id="certifications" className="py-20 md:py-32 ">
       <Container>
         <SectionHeading
           title={t("certifications.title")}
           subtitle={t("certifications.subtitle")}
         />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-sm sm:text-base md:text-lg ">
           {certifications.map((cert, index) => (
             <CertificationCard
               key={index}

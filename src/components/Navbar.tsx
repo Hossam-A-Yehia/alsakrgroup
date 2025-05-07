@@ -29,9 +29,8 @@ const Navbar = () => {
     const sections = [
       "home",
       "about",
-      "services",
-      "products",
-      "certifications",
+      "our services",
+      "our products",
       "global",
       "contact",
     ];
@@ -63,9 +62,8 @@ const Navbar = () => {
   const navLinks = [
     { id: "home", label: t("nav.home") },
     { id: "about", label: t("nav.about") },
-    { id: "services", label: t("nav.services") },
-    { id: "products", label: t("nav.products") },
-    { id: "certifications", label: t("nav.certifications") },
+    { id: "our services", label: t("nav.our services") },
+    { id: "our products", label: t("nav.our products") },
     { id: "global", label: t("nav.globalReach") },
     { id: "contact", label: t("nav.contact") },
   ];
@@ -79,7 +77,7 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container px-0  md:px-[110px] pt-4 mx-auto">
+      <div className="container px-0  md:px-10 lg:px-16 pt-4 mx-auto">
         <div className="flex items-start justify-between">
           {/* Logo and Socials */}
           <div className="flex items-center gap-7">
@@ -94,28 +92,24 @@ const Navbar = () => {
               <img src={LOGO} alt="Logo" className="max-w-[50px] " />
               <div className=" flex flex-col items-center">
                 <span className="font-bold text-xs md:text-md">
-                  Al Sakr Group
+                  <span className="text-orange-500">Al Sakr</span>{" "}
+                  <span className="text-green-500">
+                    Gr
+                    <span className="text-orange-500">o</span>
+                    up
+                  </span>
                 </span>
-                <span className="text-[8px] md:text-[10px] ">
-                  Sorting, Packing and Colling
-                </span>
-                <span className="text-[8px] md:text-[10px]">Import & Export</span>
+
+
+                <p className="text-[8px] md:text-xs">
+                  Sorting, Packing and Colling Import & Export
+                </p>
+
               </div>
             </a>
           </div>
-
           <div className="hidden md:flex flex-col items-center">
-            <span
-              dir="ltr"
-              className="flex text-lg font-semibold text-white mb-2 gap-2 items-center"
-            >
-              <div className="bg-[#25D366] rounded-full p-1">
-                <FaWhatsapp size={20} color="white" />
-              </div>
-              +201040106194
-            </span>
-
-            <div className="flex gap-2 text-md">
+            <div className="flex gap-2 text-md mb-2">
               <a href="https://facebook.com" target="_blank" rel="noreferrer">
                 <div className="bg-[#1877F2] rounded-full p-2">
                   <FaFacebookF color="white" />
@@ -147,7 +141,15 @@ const Navbar = () => {
                 </div>
               </a>
             </div>
+
+            <div className="flex items-center gap-2 text-white text-sm">
+              <div className="bg-[#25D366] rounded-full p-1">
+                <FaWhatsapp size={20} color="white" />
+              </div>
+              +201040106194
+            </div>
           </div>
+
           <div className="hidden md:flex flex-col gap-2 items-center justify-center">
             <div
               className="flex flex-wrap gap-2 "
@@ -193,7 +195,7 @@ const Navbar = () => {
                     className={`${
                       activeSection === link.id
                         ? "text-red-600 font-medium"
-                        : "text-muted-foreground"
+                        : "text"
                     } py-2 text-lg hover:text-red-600 transition-colors`}
                     onClick={(e) => {
                       e.preventDefault();
@@ -208,50 +210,51 @@ const Navbar = () => {
 
               {/* Mobile Socials */}
               <div className="mt-6 border-t pt-4">
-                <span className="block text-sm text-muted-foreground mb-2">
-                  📞 01040106194
-                </span>
-                <div className="flex gap-4 text-xl">
-                  <a
-                    href="https://facebook.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaFacebookF />
-                  </a>
-                  <a href="https://tiktok.com" target="_blank" rel="noreferrer">
-                    <FaTiktok />
-                  </a>
-                  <a
-                    href="https://instagram.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaInstagram />
-                  </a>
-                  <a
-                    href="https://youtube.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaYoutube />
-                  </a>
-                  <a
-                    href="https://twitter.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaTwitter />
-                  </a>
-                  <a
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaLinkedinIn />
-                  </a>
-                </div>
+           
+
+              <div className="flex  gap-2 text-white text-sm">
+              <div className="bg-[#25D366] rounded-full p-1 mb-4">
+                <FaWhatsapp size={24} color="white" />
               </div>
+              +201040106194
+            </div>
+            <div className="flex gap-2 text-md mb-2">
+              <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                <div className="bg-[#1877F2] rounded-full p-2">
+                  <FaFacebookF color="white" />
+                </div>
+              </a>
+              <a href="https://tiktok.com" target="_blank" rel="noreferrer">
+                <div className="bg-black rounded-full p-2">
+                  <FaTiktok color="white" />
+                </div>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                <div className="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 rounded-full p-2">
+                  <FaInstagram color="white" />
+                </div>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noreferrer">
+                <div className="bg-[#FF0000] rounded-full p-2">
+                  <FaYoutube color="white" />
+                </div>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noreferrer">
+                <div className="bg-[#1DA1F2] rounded-full p-2">
+                  <FaTwitter color="white" />
+                </div>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+                <div className="bg-[#0077B5] rounded-full p-2">
+                  <FaLinkedinIn color="white" />
+                </div>
+              </a>
+            </div>
+
+           
+        
+              </div>
+
             </SheetContent>
           </Sheet>
         </div>

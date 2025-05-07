@@ -86,7 +86,7 @@ const Contact = () => {
           icon: <MapPin className="h-5 w-5" />,
           label: t("contact.info.address"),
           value: t("contact.info.mainOffice.address"),
-          link: "https://maps.google.com/?q=80+km+Cairo-Alexandria+Desert+road+Sadat+Egypt",
+          link: "https://www.google.com/maps/place/%D9%85%D8%AD%D8%B7%D8%A9+%D8%A7%D9%84%D8%B5%D9%82%D8%B1%E2%80%AD/@30.2871474,30.599882,17z/data=!3m1!4b1!4m6!3m5!1s0x145895005ac827c3:0x5f1e1b99394694ce!8m2!3d30.2871474!4d30.599882!16s%2Fg%2F11wnnm0pr4?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D",
         },
         {
           icon: <Mail className="h-5 w-5" />,
@@ -182,7 +182,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-16 bg-gradient-to-b from-muted/20 to-white dark:from-muted/40 dark:to-gray-900"
+      className="py-20 bg-gradient-to-b from-muted/20 to-white dark:from-muted/40 dark:to-gray-900 px-4 md:px-10 lg:px-16"
       data-aos="fade-up"
       data-aos-duration="800"
     >
@@ -190,7 +190,7 @@ const Contact = () => {
         <SectionHeading
           title={t("contact.title")}
           subtitle={t("contact.subtitle")}
-          className="text-center mb-12"
+          className="text-center mb-10"
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -204,7 +204,7 @@ const Contact = () => {
                 {t("contact.info.title")}
               </h3>
 
-              <div className="space-y-2">
+              <div className="space-y-1">
                 {contactInfo.map((group, groupIndex) => (
                   <div
                     key={groupIndex}
@@ -234,7 +234,7 @@ const Contact = () => {
                           : "max-h-0 opacity-0"
                       }`}
                     >
-                      <div className="pb-4 space-y-3">
+                      <div className="pb-4 space-y-1">
                         {group.items.map((info, index) => (
                           <div key={index} className="flex items-start">
                             <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary mx-3">
@@ -246,6 +246,7 @@ const Contact = () => {
                               </p>
                               {info.link ? (
                                 <a
+                                dir='ltr'
                                   href={info.link}
                                   className="text-base text-foreground hover:text-primary hover:underline transition-all duration-200"
                                   target={
@@ -264,7 +265,7 @@ const Contact = () => {
                                   {info.value}
                                 </a>
                               ) : (
-                                <p className="text-base text-foreground">
+                                <p className="text-base text-foreground" dir='ltr'>
                                   {info.value}
                                 </p>
                               )}
@@ -277,20 +278,7 @@ const Contact = () => {
                 ))}
               </div>
 
-              <div className="mt-6">
-                <h3 className="text-lg font-semibold mb-2 text-primary dark:text-white">
-                  {t("contact.businessHours.title")}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {t("contact.businessHours.mondayFriday")}
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  {t("contact.businessHours.saturday")}
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  {t("contact.businessHours.sunday")}
-                </p>
-              </div>
+             
             </CardContent>
           </Card>
 
@@ -305,7 +293,7 @@ const Contact = () => {
               </h3>
 
               <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-1">
                   <FormField
                     control={form.control}
                     name="name"

@@ -5,7 +5,6 @@ import Hero from './components/sections/Hero';
 import About from './components/sections/About';
 import Services from './components/sections/Services';
 import Products from './components/sections/Products';
-import Certifications from './components/sections/Certifications';
 import GlobalReach from './components/sections/GlobalReach';
 import Contact from './components/sections/Contact';
 import Footer from './components/Footer';
@@ -27,7 +26,6 @@ const {i18n}= useTranslation()
           <About />
           <Services />
           <Products />
-          <Certifications />
           <GlobalReach />
           <Contact />
         </main>

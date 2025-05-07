@@ -1,13 +1,15 @@
 import { useTranslation } from "react-i18next";
 import { Container } from "../ui/container";
 import { SectionHeading } from "../ui/section-heading";
-import { Award, Clock, Globe } from "lucide-react";
+import Certifications from "./Certifications";
 
 const About = () => {
   const {t,i18n} = useTranslation();
 
   return (
-    <section id="about" className="py-20 md:py-32 bg-background px-0  md:px-[110px]" dir="ltr">
+
+    <section id="about" className="py-20 md:py-32 bg-background px-4 md:px-10 lg:px-16" dir="ltr">
+
       <Container>
         <SectionHeading
           title={t("about.title")}
@@ -31,8 +33,10 @@ const About = () => {
             data-aos-delay="200"
             dir={i18n.language === 'ar-EG' ? 'rtl' : 'ltr'}
             >
-            <p className="text-md text-white mb-0 p-0">
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>{t("about.description1")}
+
+            <p className="text-md text-muted-foreground indent-8">
+              {t("about.description1")}{" "}
+
             </p>
             <p className="text-md text-white mb-0 p-0">
               {t("about.description2")}{" "}
@@ -62,6 +66,7 @@ const About = () => {
             </div>
           </div>
         </div>
+        <Certifications />
       </Container>
     </section>
   );

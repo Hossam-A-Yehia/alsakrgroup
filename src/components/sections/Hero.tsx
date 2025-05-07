@@ -1,8 +1,11 @@
 import { ArrowDown } from "lucide-react";
 import { Button } from "../ui/button";
 import { useTranslation } from "react-i18next";
+import { useEffect, useRef } from "react";
+
 const Hero = () => {
   const { t } = useTranslation();
+  const videoRef = useRef<HTMLVideoElement>(null); 
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -14,6 +17,24 @@ const Hero = () => {
     }
   };
 
+  useEffect(() => {
+    const handleUserInteraction = () => {
+      if (videoRef.current) {
+        videoRef.current.muted = false; 
+        videoRef.current
+          .play()
+          .catch((error) => {
+              console.log(error);
+              
+          });
+      }
+    };
+    document.addEventListener("click", handleUserInteraction);
+    return () => {
+      document.removeEventListener("click", handleUserInteraction);
+    };
+  }, []);
+
   return (
     <section
       id="home"
@@ -21,14 +42,19 @@ const Hero = () => {
     >
       <div className="absolute inset-0 z-0">
         <video
-          autoPlay
+          ref={videoRef} 
           loop
           muted
+          autoPlay
           playsInline
           className="w-full h-full object-cover md:object-contain"
           style={{ minHeight: "100vh" }}
+          id="myVideo"
         >
-          <source src="https://res.cloudinary.com/dimy2zhcs/video/upload/v1746131972/hero-vidoe_thnr0r.mp4" type="video/mp4" />
+          <source
+            src="https://res.cloudinary.com/dimy2zhcs/video/upload/v1746131972/hero-vidoe_thnr0r.mp4"
+            type="video/mp4"
+          />
           Your browser does not support the video tag.
         </video>
         <div

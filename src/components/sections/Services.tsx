@@ -36,32 +36,32 @@ const Services = () => {
   const { t } = useTranslation();
   const services = [
     {
-      icon: <img src="/images/orange.jpg" alt="Sorting" className="w-full h-full object-cover" />,
+      icon: <img src="/orange.jpg" alt="Sorting" className="w-full h-full object-cover" />,
       title: t("services.items.sorting.title"),
       description: t("services.items.sorting.description")
     },
     {
-      icon: <img src="/images/cooling.jpg" alt="Cooling" className="w-full h-full object-cover" />,
+      icon: <img src="/cooling.jpg" alt="Cooling" className="w-full h-full object-cover" />,
       title: t("services.items.cooling.title"),
       description: t("services.items.cooling.description")
     },
     {
-      icon: <img src="/images/global.jpg" alt="Logistics" className="w-full h-full object-cover" />,
+      icon: <img src="/global.jpg" alt="Logistics" className="w-full h-full object-cover" />,
       title: t("services.items.logistics.title"),
       description: t("services.items.logistics.description")
     },
     {
-      icon: <img src="/images/farming.jpg" alt="Farming" className="w-full h-full object-cover" />,
+      icon: <img src="/farming.jpg" alt="Farming" className="w-full h-full object-cover" />,
       title: t("services.items.farming.title"),
       description: t("services.items.farming.description")
     },
     {
-      icon: <img src="/images/control.jpg" alt="Quality" className="w-full h-full object-cover" />,
+      icon: <img src="/control.jpg" alt="Quality" className="w-full h-full object-cover" />,
       title: t("services.items.quality.title"),
       description: t("services.items.quality.description")
     },
     {
-      icon: <img src="/images/analysis.jpg" alt="Market" className="w-full h-full object-cover" />,
+      icon: <img src="/analysis.jpg" alt="Market" className="w-full h-full object-cover" />,
       title: t("services.items.market.title"),
       description: t("services.items.market.description")
     }

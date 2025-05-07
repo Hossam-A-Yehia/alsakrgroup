@@ -22,20 +22,20 @@ const Footer = () => {
             </h3>
             <div className="space-y-3">
               <a
-                href="mailto:Info@al-sakrgroup.com"
+                href="mailto:info@alsakrgroup.net"
                 className="flex items-center text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
                 <Mail className="h-4 w-4 mx-2" />
-                Info@al-sakrgroup.com
+                info@alsakrgroup.net
               </a>
               <a
-                href="http://www.al-sakrgroup.com"
+                href="http://www.alsakrgroup.net"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
                 <Globe className="h-4 w-4 mx-2" />
-                www.al-sakrgroup.com
+                www.alsakrgroup.net
               </a>
               <div className="flex items-center text-primary-foreground/80">
                 <MapPin className="h-4 w-4 mx-2" />

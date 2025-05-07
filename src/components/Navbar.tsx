@@ -77,7 +77,7 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container px-0  md:px-10 lg:px-16 pt-4 mx-auto">
+      <div className="container px-0  md:px-[110px] pt-4 mx-auto">
         <div className="flex items-start justify-between">
           {/* Logo and Socials */}
           <div className="flex items-center gap-7">

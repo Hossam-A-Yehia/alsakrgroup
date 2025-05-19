@@ -34,7 +34,7 @@ const About = () => {
             dir={i18n.language === 'ar-EG' ? 'rtl' : 'ltr'}
             >
 
-            <p className="text-md text-muted-foreground indent-8">
+            <p className="text-md ">
               {t("about.description1")}{" "}
 
             </p>

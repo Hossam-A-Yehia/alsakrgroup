@@ -7,7 +7,7 @@ import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
 import { Button } from '../ui/button';
 import { useToast } from '@/hooks/use-toast';
-import { Mail, Phone, MapPin, ChevronDown } from 'lucide-react';
+import { Mail, Phone, MapPin, ChevronDown,UserRound } from 'lucide-react';
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -20,7 +20,6 @@ import {
   FormMessage,
 } from '../ui/form';
 import emailjs from '@emailjs/browser';
-
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Please enter a valid email address"),
@@ -112,7 +111,7 @@ const Contact = () => {
       group: t("contact.info.marketingSales.title"),
       items: [
         {
-          icon: <Mail className="h-5 w-5" />,
+          icon: <UserRound className="h-5 w-5" />,
           label: t("contact.info.contactPerson"),
           value: "Dr. Mahmoud Sakr",
           link: null,
@@ -135,7 +134,7 @@ const Contact = () => {
       group: t("contact.info.financeAccounts.title"),
       items: [
         {
-          icon: <Mail className="h-5 w-5" />,
+          icon: <UserRound className="h-5 w-5" />,
           label: t("contact.info.contactPerson"),
           value: "Eng. Isam Sakr",
           link: null,

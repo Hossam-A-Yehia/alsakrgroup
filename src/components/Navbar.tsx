@@ -77,7 +77,7 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container px-0  md:px-[110px] pt-4 mx-auto">
+      <div className="container px-0  md:px-[70px] pt-4 mx-auto">
         <div className="flex items-start justify-between">
           {/* Logo and Socials */}
           <div className="flex items-center gap-7">
@@ -100,17 +100,19 @@ const Navbar = () => {
                   </span>
                 </span>
 
-
                 <p className="text-[8px] md:text-xs">
                   Sorting, Packing and Colling Import & Export
                 </p>
-
               </div>
             </a>
           </div>
           <div className="hidden md:flex flex-col items-center">
             <div className="flex gap-2 text-md mb-2">
-              <a href="https://facebook.com" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.facebook.com/profile.php?id=61576448733998"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="bg-[#1877F2] rounded-full p-2">
                   <FaFacebookF color="white" />
                 </div>
@@ -142,12 +144,17 @@ const Navbar = () => {
               </a>
             </div>
 
-            <div className="flex items-center gap-2 text-white text-sm">
+            <a
+              href="https://wa.me/201040106194"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-white text-sm"
+            >
               <div className="bg-[#25D366] rounded-full p-1">
                 <FaWhatsapp size={20} color="white" />
               </div>
-              +201040106194
-            </div>
+              +20 1040106194
+            </a>
           </div>
 
           <div className="hidden md:flex flex-col gap-2 items-center justify-center">
@@ -164,10 +171,10 @@ const Navbar = () => {
                   }}
                   className={`${
                     activeSection === link.id
-                      ? `text-red-700 font-bold  ${
+                      ? `text-[#c7ede7] font-bold  ${
                           i18n.language === "ar-EG" ? "text-lg" : "text-sm"
                         }`
-                      : `${"text-white"} hover:text-red-700 transition-colors font-bold cursor-pointer  ${
+                      : `${"text-white"} hover:text-[#c7ede7] transition-colors font-bold cursor-pointer  ${
                           i18n.language === "ar-EG" ? "text-lg" : "text-sm"
                         }`
                   }`}
@@ -210,51 +217,72 @@ const Navbar = () => {
 
               {/* Mobile Socials */}
               <div className="mt-6 border-t pt-4">
-           
-
-              <div className="flex  gap-2 text-white text-sm">
-              <div className="bg-[#25D366] rounded-full p-1 mb-4">
-                <FaWhatsapp size={24} color="white" />
+                <div className="flex  gap-2 text-white text-sm">
+                  <a
+                    href="https://wa.me/201040106194"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-white text-sm mb-3"
+                  >
+                    <div className="bg-[#25D366] rounded-full p-1">
+                      <FaWhatsapp size={20} color="white" />
+                    </div>
+                    +20 1040106194
+                  </a>
+                </div>
+                <div className="flex gap-2 text-md mb-2">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61576448733998"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="bg-[#1877F2] rounded-full p-2">
+                      <FaFacebookF color="white" />
+                    </div>
+                  </a>
+                  <a href="https://tiktok.com" target="_blank" rel="noreferrer">
+                    <div className="bg-black rounded-full p-2">
+                      <FaTiktok color="white" />
+                    </div>
+                  </a>
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 rounded-full p-2">
+                      <FaInstagram color="white" />
+                    </div>
+                  </a>
+                  <a
+                    href="https://youtube.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="bg-[#FF0000] rounded-full p-2">
+                      <FaYoutube color="white" />
+                    </div>
+                  </a>
+                  <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="bg-[#1DA1F2] rounded-full p-2">
+                      <FaTwitter color="white" />
+                    </div>
+                  </a>
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="bg-[#0077B5] rounded-full p-2">
+                      <FaLinkedinIn color="white" />
+                    </div>
+                  </a>
+                </div>
               </div>
-              +201040106194
-            </div>
-            <div className="flex gap-2 text-md mb-2">
-              <a href="https://facebook.com" target="_blank" rel="noreferrer">
-                <div className="bg-[#1877F2] rounded-full p-2">
-                  <FaFacebookF color="white" />
-                </div>
-              </a>
-              <a href="https://tiktok.com" target="_blank" rel="noreferrer">
-                <div className="bg-black rounded-full p-2">
-                  <FaTiktok color="white" />
-                </div>
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer">
-                <div className="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 rounded-full p-2">
-                  <FaInstagram color="white" />
-                </div>
-              </a>
-              <a href="https://youtube.com" target="_blank" rel="noreferrer">
-                <div className="bg-[#FF0000] rounded-full p-2">
-                  <FaYoutube color="white" />
-                </div>
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer">
-                <div className="bg-[#1DA1F2] rounded-full p-2">
-                  <FaTwitter color="white" />
-                </div>
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-                <div className="bg-[#0077B5] rounded-full p-2">
-                  <FaLinkedinIn color="white" />
-                </div>
-              </a>
-            </div>
-
-           
-        
-              </div>
-
             </SheetContent>
           </Sheet>
         </div>

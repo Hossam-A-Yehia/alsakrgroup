@@ -110,7 +110,7 @@
       " Timber": "البازلاء الخضراء",
       "cabbage_white_and_red": "الملفوف (الأبيض والأحمر)",
       "iceberg_lettuce_green_cos_chinese_lettuce": "خس آيسبيرج/خس أخضر/خس صيني",
-      "capsicum_green_red_yellow": "الفلفل (أخضر، أحمر، أصفرو برتقالي)",
+      "capsicum_green_red_yellow": "الفلفل (أخضر، أحمر، أصفر, برتقالي)",
       "chilli_pepper_red_and_green": "فلفل حار (أحمر وأخضر)",
       "zucchini": "الكوسا",
       "cucumber": "الخيار",
@@ -125,9 +125,10 @@
       "garlic_peeled_garlic": "الثوم/الثوم المقشر",
       "spring_onion": "البصل الأخضر",
       "turnip": "اللفت",
-      "cherry_tomato": "الكيزر ",
+      "cherry_tomato": "الكريز ",
       "broccoli": "البروكلي",
       "celery": "الكرفس",
+      "green_peas": "البازلاء الخضراء",
       "rosemary": " روز ماري",
       "beetroot": "البنجر",
       "mushroom": "المشروم",
@@ -266,13 +267,15 @@
       "message": "الرسالة",
       "namePlaceholder": "اسمك",
       "emailPlaceholder": "بريدك الإلكتروني",
+      "phonePlaceholder": "هاتفك المحمول",
       "messagePlaceholder": "اكتب رسالتك هنا...",
       "send": "إرسال الرسالة",
       "sending": "جاري الإرسال...",
       "successTitle": "تم إرسال الرسالة بنجاح",
       "successDescription": "سنرد عليك في أقرب وقت ممكن.",
       "errorTitle": "فشل إرسال الرسالة",
-      "errorDescription": "حدث خطأ ما. يرجى المحاولة مرة أخرى لاحقًا."
+      "errorDescription": "حدث خطأ ما. يرجى المحاولة مرة أخرى لاحقًا.",
+      "phone": "الهاتف"
     }
   },
   "footer": {

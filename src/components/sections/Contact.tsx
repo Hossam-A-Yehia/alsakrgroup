@@ -7,7 +7,7 @@ import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
 import { Button } from '../ui/button';
 import { useToast } from '@/hooks/use-toast';
-import { Mail, Phone, MapPin, ChevronDown,UserRound } from 'lucide-react';
+import { Mail, Phone, MapPin, ChevronDown,UserRound, Globe } from 'lucide-react';
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -23,6 +23,7 @@ import emailjs from '@emailjs/browser';
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Please enter a valid email address"),
+  phone: z.string().min(7, "Please enter a valid mobile phone"),
   message: z.string().min(10, "Message must be at least 10 characters"),
 });
 
@@ -39,6 +40,7 @@ const Contact = () => {
     defaultValues: {
       name: "",
       email: "",
+      phone:"",
       message: "",
     },
   });
@@ -54,6 +56,7 @@ const Contact = () => {
       name: data.name,
       email: data.email,
       message: data.message,
+      phone: data.phone,
     };
 
     emailjs.send(serviceId, templateId, templateParams, publicKey)
@@ -91,7 +94,7 @@ const Contact = () => {
           icon: <Mail className="h-5 w-5" />,
           label: t("contact.info.email"),
           value: "info@alsakrgroup.net",
-          link: "mailto:info@alsakrgroup.net",
+          link: "mailto:info@alsakrgroup.net"
         },
         {
           icon: <Phone className="h-5 w-5" />,
@@ -100,7 +103,7 @@ const Contact = () => {
           link: "tel:+201040106194",
         },
         {
-          icon: <Mail className="h-5 w-5" />,
+          icon: <Globe  className="h-5 w-5" />,
           label: t("contact.info.website"),
           value: "www.alsakrgroup.net",
           link: "https://www.alsakrgroup.net",
@@ -119,8 +122,8 @@ const Contact = () => {
         {
           icon: <Mail className="h-5 w-5" />,
           label: t("contact.info.email"),
-          value: "director@alsakrgroup.net",
-          link: "mailto:director@alsakrgroup.net",
+          value: "marketing@alsakrgroup.net",
+          link: "mailto:marketing@alsakrgroup.net",
         },
         {
           icon: <Phone className="h-5 w-5" />,
@@ -142,8 +145,8 @@ const Contact = () => {
         {
           icon: <Mail className="h-5 w-5" />,
           label: t("contact.info.email"),
-          value: "finance@alsakrgroup.net",
-          link: "mailto:finance@alsakrgroup.net",
+          value: "accounts@alsakrgroup.net",
+          link: "mailto:accounts@alsakrgroup.net",
         },
         {
           icon: <Phone className="h-5 w-5" />,
@@ -332,6 +335,25 @@ const Contact = () => {
                       </FormItem>
                     )}
                   />
+                  <FormField
+                    control={form.control}
+                    name="phone"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="text-sm font-medium text-foreground">
+                          {t("contact.form.phone")}
+                        </FormLabel>
+                        <FormControl>
+                          <Input
+                            placeholder={t("contact.form.phonePlaceholder")}
+                            className="border-muted focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 rounded-lg"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
 
                   <FormField
                     control={form.control}
@@ -344,7 +366,7 @@ const Contact = () => {
                         <FormControl>
                           <Textarea
                             placeholder={t("contact.form.messagePlaceholder")}
-                            className="min-h-[120px] border-muted focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 rounded-lg"
+                            className="max-h-[60px] border-muted focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 rounded-lg"
                             {...field}
                           />
                         </FormControl>

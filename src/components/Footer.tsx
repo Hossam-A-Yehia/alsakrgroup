@@ -50,6 +50,12 @@ const Footer = () => {
             </h3>
             <div className="grid grid-cols-2 gap-2">
               <a
+                href="#home"
+                className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+              >
+                {t("nav.home")}{" "}
+              </a>
+              <a
                 href="#about"
                 className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
@@ -66,12 +72,6 @@ const Footer = () => {
                 className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
                 {t("footer.our products")}{" "}
-              </a>
-              <a
-                href="#languages"
-                className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-              >
-                {t("footer.languages")}{" "}
               </a>
               <a
                 href="#global"

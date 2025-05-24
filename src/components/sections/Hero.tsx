@@ -1,35 +1,24 @@
-import {  useRef } from "react";
+import {  useEffect, useRef } from "react";
 
 const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null); 
 
-  // const scrollToSection = (sectionId: string) => {
-  //   const element = document.getElementById(sectionId);
-  //   if (element) {
-  //     window.scrollTo({
-  //       top: element.offsetTop - 80,
-  //       behavior: "smooth",
-  //     });
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   const handleUserInteraction = () => {
-  //     if (videoRef.current) {
-  //       videoRef.current.muted = false; 
-  //       videoRef.current
-  //         .play()
-  //         .catch((error) => {
-  //             console.log(error);
-              
-  //         });
-  //     }
-  //   };
-  //   document.addEventListener("click", handleUserInteraction);
-  //   return () => {
-  //     document.removeEventListener("click", handleUserInteraction);
-  //   };
-  // }, []);
+  useEffect(() => {
+    const handleUserInteraction = () => {
+      if (videoRef.current) {
+        videoRef.current.muted = false; 
+        videoRef.current
+          .play()
+          .catch((error) => {
+              console.log(error);
+          });
+      }
+    };
+    document.addEventListener("click", handleUserInteraction);
+    return () => {
+      document.removeEventListener("click", handleUserInteraction);
+    };
+  }, []);
 
   return (
     <section

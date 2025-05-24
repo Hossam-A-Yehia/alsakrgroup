@@ -7,7 +7,7 @@
     "certifications": "Certifications",
     "globalReach": "Worldwide",
     "contact": "Contact us",
-    "languages":"languages"
+    "languages": "languages"
   },
   "hero": {
     "title": "Freshness Delivered Globally",
@@ -125,7 +125,7 @@
       "garlic_peeled_garlic": "Garlic/Peeled Garlic",
       "spring_onion": "Spring Onion",
       "turnip": "Turnip",
-      "cherry_tomato": "Cherry Tomato",
+      "cherry_tomato": "Tomato",
       "broccoli": "Broccoli",
       "celery": "Celery",
       "rosemary": "Rosemary",
@@ -266,13 +266,15 @@
       "message": "Message",
       "namePlaceholder": "Your Name",
       "emailPlaceholder": "Your Email",
+      "phonePlaceholder": "Your Phone",
       "messagePlaceholder": "Write your message here...",
       "send": "Send Message",
       "sending": "Sending...",
       "successTitle": "Message Sent Successfully",
       "successDescription": "We will respond to you as soon as possible.",
       "errorTitle": "Failed to Send Message",
-      "errorDescription": "Something went wrong. Please try again later."
+      "errorDescription": "Something went wrong. Please try again later.",
+      "phone": "Phone"
     }
   },
   "footer": {

@@ -11,13 +11,13 @@
   },
   "hero": {
     "title": "Freshness Delivered Globally",
-    "subtitle": "Exporting premium fruits and vegetables from Egypt since 2002, with a commitment to quality and sustainability.",
+    "subtitle": "Exporting premium fruits and vegetables from Egypt since 2024, with a commitment to quality and sustainability.",
     "connectButton": "Connect With Us",
     "learnButton": "Learn More"
   },
   "about": {
     "title": "Who we are?",
-    "subtitle": "Premium quality produce export since 2002",
+    "subtitle": "Premium quality produce export since 2024",
     "description1": "Al Sakr Group has been Egypt's premier exporter of fresh, high-quality fruits and vegetables. Our passion for excellence drives us to deliver the finest produce to international markets.",
     "description2": "We prioritize sustainability, innovation, and strong partnerships, ensuring every product from farm to table meets the highest standards of quality and freshness.",
     "features": {
@@ -125,7 +125,7 @@
       "garlic_peeled_garlic": "Garlic/Peeled Garlic",
       "spring_onion": "Spring Onion",
       "turnip": "Turnip",
-      "cherry_tomato": "Tomato",
+      "cherry_tomato": "Cherry Tomato",
       "broccoli": "Broccoli",
       "celery": "Celery",
       "rosemary": "Rosemary",
@@ -278,7 +278,7 @@
     }
   },
   "footer": {
-    "description": "Exporting premium fruits and vegetables from Egypt since 2002, with a commitment to quality and sustainability.",
+    "description": "Exporting premium fruits and vegetables from Egypt since 2024, with a commitment to quality and sustainability.",
     "contact us": "Contact Us",
     "based": "Based in Egypt, serving the world",
     "explore": "Explore",

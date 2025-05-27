@@ -117,12 +117,12 @@ const Navbar = () => {
                   <FaFacebookF color="white" />
                 </div>
               </a>
-              <a href="https://tiktok.com" target="_blank" rel="noreferrer">
+              <a href="https://www.tiktok.com/@alsakrgroup?fbclid=IwY2xjawKhPOBleHRuA2FlbQIxMABicmlkETFDT09hSnlpQnpJeWZoSHk4AR4L5KTRCWaTZCCw3S9UFiBHyNWl4JYxs88gKBN4t_SvuJOxTzLHTz1HT2IM-w_aem_QQyl5rbEtALamG5XuteHgQ" target="_blank" rel="noreferrer">
                 <div className="bg-black rounded-full p-2">
                   <FaTiktok color="white" />
                 </div>
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/Alsakrgroup2024?fbclid=IwY2xjawKg-7xleHRuA2FlbQIxMABicmlkETFDT09hSnlpQnpJeWZoSHk4AR5XSdPCVOxrD0CkdBqYjQcICIuot-fcyH0Mc5FdkTBjYcZqWSLvVvwMjOyMow_aem_3ptarweSpqFHTFxgb3DVDg" target="_blank" rel="noreferrer">
                 <div className="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 rounded-full p-2">
                   <FaInstagram color="white" />
                 </div>
@@ -240,13 +240,13 @@ const Navbar = () => {
                       <FaFacebookF color="white" />
                     </div>
                   </a>
-                  <a href="https://tiktok.com" target="_blank" rel="noreferrer">
+                  <a href="https://www.tiktok.com/@alsakrgroup?fbclid=IwY2xjawKhPOBleHRuA2FlbQIxMABicmlkETFDT09hSnlpQnpJeWZoSHk4AR4L5KTRCWaTZCCw3S9UFiBHyNWl4JYxs88gKBN4t_SvuJOxTzLHTz1HT2IM-w_aem_QQyl5rbEtALamG5XuteHgQ" target="_blank" rel="noreferrer">
                     <div className="bg-black rounded-full p-2">
                       <FaTiktok color="white" />
                     </div>
                   </a>
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/Alsakrgroup2024?fbclid=IwY2xjawKg-7xleHRuA2FlbQIxMABicmlkETFDT09hSnlpQnpJeWZoSHk4AR5XSdPCVOxrD0CkdBqYjQcICIuot-fcyH0Mc5FdkTBjYcZqWSLvVvwMjOyMow_aem_3ptarweSpqFHTFxgb3DVDg"
                     target="_blank"
                     rel="noreferrer"
                   >

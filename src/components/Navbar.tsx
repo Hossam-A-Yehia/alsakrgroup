@@ -127,12 +127,12 @@ const Navbar = () => {
                   <FaInstagram color="white" />
                 </div>
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noreferrer">
+              <a href="https://www.youtube.com/channel/UCpeXqUzgFbnTt0g_-zSp_uw" target="_blank" rel="noreferrer">
                 <div className="bg-[#FF0000] rounded-full p-2">
                   <FaYoutube color="white" />
                 </div>
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer">
+              <a href="https://x.com/Alsakrgroup?fbclid=IwY2xjawKqQy1leHRuA2FlbQIxMABicmlkETE1a09mRDBnRXR6aTBRd2E1AR7qVoFo9MFY_AqNGlV1HenH-NYv2IrwDW_MCMXUMx2M3u3gXIWb8J6VLAE6fA_aem_9eLJIoPA7y2fit-INSjlAw" target="_blank" rel="noreferrer">
                 <div className="bg-[#1DA1F2] rounded-full p-2">
                   <FaTwitter color="white" />
                 </div>
@@ -255,7 +255,7 @@ const Navbar = () => {
                     </div>
                   </a>
                   <a
-                    href="https://youtube.com"
+                    href="https://www.youtube.com/channel/UCpeXqUzgFbnTt0g_-zSp_uw"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -264,7 +264,7 @@ const Navbar = () => {
                     </div>
                   </a>
                   <a
-                    href="https://twitter.com"
+                    href="https://x.com/Alsakrgroup?fbclid=IwY2xjawKqQy1leHRuA2FlbQIxMABicmlkETE1a09mRDBnRXR6aTBRd2E1AR7qVoFo9MFY_AqNGlV1HenH-NYv2IrwDW_MCMXUMx2M3u3gXIWb8J6VLAE6fA_aem_9eLJIoPA7y2fit-INSjlAw"
                     target="_blank"
                     rel="noreferrer"
                   >

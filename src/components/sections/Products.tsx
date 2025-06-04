@@ -580,107 +580,107 @@ const Products = () => {
       },
       {
         name: t("products.items.chilli_dry_and_powder"),
-        image: "./our-dry-and-powder-products/Chillidryandpower.png",
+        image: "/our-dry-and-powder-products/Chillidryandpower.png",
       },
       {
         name: t("products.items.tomatoes"),
-        image: "./our-dry-and-powder-products/Tomato.jpeg",
+        image: "/our-dry-and-powder-products/Tomato.jpeg",
       },
       {
         name: t("products.items.spinach"),
-        image: "./our-dry-and-powder-products/Spinach.png",
+        image: "/our-dry-and-powder-products/Spinach.png",
       },
       {
         name: t("products.items.carrot"),
-        image: "./our-dry-and-powder-products/Carrot.png",
+        image: "/our-dry-and-powder-products/Carrot.png",
       },
       {
         name: t("products.items.lemon"),
-        image: "./our-dry-and-powder-products/Lemon.jpeg",
+        image: "/our-dry-and-powder-products/Lemon.jpeg",
       },
       {
         name: t("products.items.potatoes"),
-        image: "./our-dry-and-powder-products/Potatoes.png",
+        image: "/our-dry-and-powder-products/Potatoes.png",
       },
       {
         name: t("products.items.onion"),
-        image: "./our-dry-and-powder-products/Onion.png",
+        image: "/our-dry-and-powder-products/Onion.png",
       },
       {
         name: t("products.items.sweet_potato"),
-        image: "./our-dry-and-powder-products/SweetPotato.png",
+        image: "/our-dry-and-powder-products/SweetPotato.png",
       },
       {
         name: t("products.items.cauliflower"),
-        image: "./our-dry-and-powder-products/Cauliflower.png",
+        image: "/our-dry-and-powder-products/Cauliflower.png",
       },
       {
         name: t("products.items.garlic_peeled_garlic"),
-        image: "./our-dry-and-powder-products/Garlicpeeledgarlic.png",
+        image: "/our-dry-and-powder-products/Garlicpeeledgarlic.png",
       },
       {
         name: t("products.items.spring_onion"),
-        image: "./our-dry-and-powder-products/Springonion.png",
+        image: "/our-dry-and-powder-products/Springonion.png",
       },
       {
         name: t("products.items.turnip"),
-        image: "./our-dry-and-powder-products/Turnip.png",
+        image: "/our-dry-and-powder-products/Turnip.png",
       },
       {
         name: t("products.items.broccoli"),
-        image: "./our-dry-and-powder-products/Broccoli.png",
+        image: "/our-dry-and-powder-products/Broccoli.png",
       },
       {
         name: t("products.items.celery"),
-        image: "./our-dry-and-powder-products/Celery.png",
+        image: "/our-dry-and-powder-products/Celery.png",
       },
       {
         name: t("products.items.beetroot"),
-        image: "./our-dry-and-powder-products/Beetroot.png",
+        image: "/our-dry-and-powder-products/Beetroot.png",
       },
       {
         name: t("products.items.mushroom"),
-        image: "./our-dry-and-powder-products/Mushroom.png",
+        image: "/our-dry-and-powder-products/Mushroom.png",
       },
       {
         name: t("products.items.okra"),
-        image: "./our-dry-and-powder-products/Okra.png",
+        image: "/our-dry-and-powder-products/Okra.png",
       },
       {
         name: t("products.items.molokhia"),
-        image: "./our-dry-and-powder-products/Molokhia.jpeg",
+        image: "/our-dry-and-powder-products/Molokhia.jpeg",
       },
       {
         name: t("products.items.sweet_corn"),
-        image: "./our-dry-and-powder-products/Sweetcorn.png",
+        image: "/our-dry-and-powder-products/Sweetcorn.png",
       },
       {
         name: t("products.items.coriander_leaves"),
-        image: "./our-dry-and-powder-products/Corianderleaves.png",
+        image: "/our-dry-and-powder-products/Corianderleaves.png",
       },
       {
         name: t("products.items.sweet_basil"),
-        image: "./our-dry-and-powder-products/Sweetbasil.png",
+        image: "/our-dry-and-powder-products/Sweetbasil.png",
       },
       {
         name: t("products.items.mint"),
-        image: "./our-dry-and-powder-products/Mint.png",
+        image: "/our-dry-and-powder-products/Mint.png",
       },
       {
         name: t("products.items.lemon_grass"),
-        image: "./our-dry-and-powder-products/Lemongrass.png",
+        image: "/our-dry-and-powder-products/Lemongrass.png",
       },
       {
         name: t("products.items.taro"),
-        image: "./our-dry-and-powder-products/Taro.png",
+        image: "/our-dry-and-powder-products/Taro.png",
       },
       {
         name: t("products.items.artichoke"),
-        image: "./our-dry-and-powder-products/Artichoke.jpeg",
+        image: "/our-dry-and-powder-products/artichoke.jpeg",
       },
       {
         name: t("products.items.curly_parsley"),
-        image: "./our-dry-and-powder-products/Curlyparsley.png",
+        image: "/our-dry-and-powder-products/Curlyparsley.png",
       },
     ],
     frozen: [
@@ -915,7 +915,7 @@ const Products = () => {
       },
       {
         name: t("products.items.artichoke"),
-        image: "/our-frozen-products/Artichoke.jpeg",
+        image: "/our-dry-and-powder-products/artichoke.jpeg",
       },
       {
         name: t("products.items.curly_parsley"),
